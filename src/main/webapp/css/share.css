@@ -1,0 +1,39 @@
+body,html{
+    max-width: 750px;
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    background-color: #f5f5f5;
+}
+.box{
+
+    width: 98%;
+    display: block;
+    margin: 50px auto;
+
+}
+.box ul{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+
+}
+.box ul li{
+    margin: 2px auto;
+    width: 50%;
+    height: 200px;
+    display: block;
+    float: left;
+
+}
+.box ul li a{
+    width: 140px;
+    height: 200px;
+    display: block;
+}
+.box ul li a img{
+    width: 140px;
+    height: 200px;
+    display: block;
+}

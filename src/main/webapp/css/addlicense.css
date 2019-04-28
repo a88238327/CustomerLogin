@@ -1,0 +1,112 @@
+body,html{
+    max-width: 750px;
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    background-color: #f5f5f5;
+}
+.box{
+    top: 50px;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.box .img_box{
+    display: block;
+    position: relative;
+    width: 98%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.box .img_box img{
+    float: left;
+    margin-left: 10px;
+    width: 45%;
+}
+.box ul{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.box ul li{
+    background-color: white;
+    overflow: hidden;
+    margin-top: 2px;
+}
+.box ul li p{
+    font-size: 1.2em;
+    padding-left: 2px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.box ul li span{
+    float: right;
+    padding-right: 2px;
+    height: 30px;
+    line-height: 30px;
+}
+#upzhuye{
+    position: absolute;
+    -moz-opacity:0;
+    opacity:0;
+   width: 45%;
+    display: block;
+    height: 100%;
+    margin-left: 10px;
+}
+#upfuye{
+    position: absolute;
+    -moz-opacity:0;
+    opacity:0;
+    right: 5%;
+    width: 45%;
+    height: 100%;
+    display: block;
+    margin-left: 20px;
+}
+#zhenghao{
+    padding-right: 2px;
+    width: 50%;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+}
+#tijiao{
+    width: 50%;
+    height: 30px;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    margin: 20px auto;
+    bottom: 60px;
+    position: absolute;
+    z-index: 99999;
+    transform: translateX(50%);
+}
+#tijiao p{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+#zhu{
+    color: red;
+    position: relative;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    display: block;
+}
+#danganhao{
+    padding-right: 2px;
+    width: 50%;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+}

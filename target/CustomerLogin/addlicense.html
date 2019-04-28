@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>車家网</title>
+    <link rel="stylesheet" type="text/css" href="css/bass.css" />
+    <link rel="stylesheet" type="text/css" href="css/addlicense.css?111" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<body>
+<header><p>添加驾驶证</p></header>
+<div class="box">
+    <div class="img_box">
+        <img id="zhuye" src="img/jiashizhengzhuye.png">
+        <img id="fuye" src="img/jiashizhengfuye.png">
+        <input type="file" class="inputfileclass" id="upzhuye" accept="image/*" capture="camera">
+        <input type="file" class="inputfileclass" id="upfuye" accept="image/*" capture="camera">
+
+    </div>
+    <p id="zhu">*注：请核对证号和档案号是否正确，如有错误请直接点击证号修改！</p>
+    <ul>
+        <li><p>姓名</p><span id="xingming"></span></li>
+        <li><p>性别</p><span id="xingbie"></span></li>
+        <li><p>住址</p><span id="zhuzhi"></span></li>
+        <li><p>国籍</p><span id="guoji"></span></li>
+        <li><p>准驾车型</p><span id="zhunjiachexing"></span></li>
+        <li><p>证号</p><input type="text" id="zhenghao"value=""></li>
+        <li><p>档案号</p><input type="text" id="danganhao"value=""></li>
+        <li><p>初次领证日期</p><span id="chucilingzhengriqi"></span></li>
+        <li><p>有效期至</p><span id="youxiaoqizhi"></span></li>
+
+    </ul>
+</div>
+
+<div id="tijiao"><p>提交</p></div>
+<footer>
+    <ul class="clf">
+        <li><a href="shouye.html"><img src="img/shouye.png">
+            <p>首页</p></a></li>
+        <li><a href="jifenshangcheng.html"><img src="img/shangcheng.png">
+            <p>积分商城</p></a></li>
+        <li><a href="dingdan.html"><img src="img/dingdan.png">
+            <p>订单</p></a></li>
+        <li><a href="gerenzhongxin.html"><img src="img/wode.png">
+            <p>我的</p></a></li>
+    </ul>
+</footer>
+</body>
+<script src="js/addlicense.js?111"></script>
+</html>

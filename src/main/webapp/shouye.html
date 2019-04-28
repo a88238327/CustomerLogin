@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/bass.css"/>
+    <link rel="stylesheet" type="text/css" href="css/shouye.css?1112"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css?1112"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>首页</title>
+    <style>
+        body {
+            height: 100%;
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+<div class="body">
+    <div id="header">
+        <ul id="Carousel" class="clf">
+        </ul>
+        <ul id="dian">
+            <li class="now"></li>
+        </ul>
+    </div>
+    <div class="daohang1">
+        <ul class="clf">
+            <li><a href="pingtaijieshao.html"><img src="img/pingtaijieshao.png">
+                <p>平台介绍</p></a></li>
+            <li><a href="yonghuzhinan.html"><img src="img/yonghuzhinan.png">
+                <p>用户指南</p></a></li>
+            <li><a href="shouye.html"><img src="img/zhaoshangjiameng.png">
+                <p>招商加盟</p></a></li>
+            <li><a href="javascript:getphone()"><img src="img/lianxikefu.png">
+                <p>联系客服</p></a></li>
+
+        </ul>
+    </div>
+    <div class="chezhufuwu">
+        <div class="cell"></div>
+        <h1>公益服务</h1>
+        <ul class="clf">
+            <li><a href="accident?servicename=事故处理"><img src="img/jiaotongshigu.png">
+                <p>事故处理</p></a></li>
+            <li><a href="accident?servicename=免费年审"><img src="img/nianshen.png">
+                <p>免费年审</p></a></li>
+            <li><a href="#"><img src="img/tixing.png">
+                <p>提&nbsp;&nbsp;&nbsp;&nbsp;醒</p></a></li>
+            <li><a href="service?servicename=一键救援"><img src="img/jiuyaun.png">
+                <p>一键救援</p></a></li>
+        </ul>
+    </div>
+    <div class="chezhufuli">
+        <div class="cell"></div>
+        <h1>会员福利</h1>
+        <ul class="clf" id="fuli">
+
+        </ul>
+    </div>
+    <div class="chezhufuli">
+        <div class="cell"></div>
+        <h1>增值服务</h1>
+        <ul class="clf" id="zengzhi">
+
+        </ul>
+    </div>
+    <footer>
+        <ul class="clf">
+            <li><a href="shouye.html"><img src="img/shouyelan.png">
+                <p style="color:dodgerblue;">首页</p></a></li>
+            <li><a href="jifenshangcheng.html"><img src="img/shangcheng.png">
+                <p>积分商城</p></a></li>
+            <li><a href="dingdan.html"><img src="img/dingdan.png">
+                <p>订单</p></a></li>
+            <li><a href="gerenzhongxin.html"><img src="img/wode.png">
+                <p>我的</p></a></li>
+        </ul>
+    </footer>
+</div>
+
+<script src="js/Carousel.js"></script>
+<script src="js/shouye.js?11212"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+    window.onload = function () {
+        $.post(
+            "shouye",
+            {
+                type: "getimg"
+            },
+            function (result) {
+                var obj = JSON.parse(result);
+                createCarousel(obj.carousel);
+                banner(obj.carousel.length + 2);
+                createfuli(obj.fuli);
+                createzengzhi(obj.zengzhi);
+            }
+        );
+    };
+
+    function getphone() {
+        var customerphone;
+        $.get(
+            "getphone",
+            function (result) {
+                if (result == "needlogin") {
+                    location.href = "userlogin";
+                } else {
+                    customerphone = result;
+                }
+                console.log("https://cloud.hnjtbf.com/service/customerlogin?phone=" + customerphone);
+                location.href = "https://cloud.hnjtbf.com/service/customerlogin?phone=" + customerphone;
+
+            }
+        );
+    }
+
+</script>
+</body>
+</html>

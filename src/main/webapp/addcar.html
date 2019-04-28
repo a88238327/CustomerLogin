@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>車家网</title>
+    <link rel="stylesheet" type="text/css" href="css/bass.css" />
+    <link rel="stylesheet" type="text/css" href="css/addcar.css?2311" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/exif.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<body>
+<header><p>添加车辆</p></header>
+<div class="box">
+    <div class="box_top">
+        <img id="zhuye" src="img/xingshizhengzhuye.png">
+        <img id="fuye" src="img/xingshizhengfuye.png">
+        <input type="file" class="inputfileclass" id="upzhuye" accept="image/*" capture="camera">
+        <input type="file" class="inputfileclass" id="upfuye" accept="image/*" capture="camera">
+    </div>
+
+    <ul>
+        <li><span>车牌号</span><p id="chepaihao"></p></li>
+        <li><span>品牌型号</span><p id="pingpai"></p></li>
+        <li><span>使用性质</span><p id="xingzhi"></p></li>
+        <li><span>发证日期</span><p id="fazheng"></p></li>
+        <li><span>注册日期</span><p id="zhuce"></p></li>
+        <li><span>车辆类型</span><p id="leixing"></p></li>
+        <li><span>所有人</span><p id="chiyouren"></p></li>
+        <li><span>下次年检</span><input type="month" id="xiacinianjian"></li>
+        <li><span>车牌颜色</span>
+            <select id="select">
+                <option value=""></option>
+                <option value="蓝">蓝</option>
+                <option value="黄">黄</option>
+                <option value="绿">绿</option>
+            </select>
+        </li>
+    </ul>
+    <div id="tijiao"><p>提交</p></div>
+    <img id="load" src="data:image/gif;base64,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">
+</div>
+<footer>
+    <ul class="clf">
+        <li><a href="shouye.html"><img src="img/shouye.png"><p>首页</p> </a></li>
+        <li><a href="jifenshangcheng.html"><img src="img/shangcheng.png"><p>积分商城</p> </a></li>
+        <li><a href="dingdan.html"><img src="img/dingdan.png"><p>订单</p> </a></li>
+        <li><a href="gerenzhongxin.html"><img src="img/wode.png"><p>我的</p> </a></li>
+    </ul>
+</footer>
+</body>
+<script src="js/addcars.js?111"></script>
+</html>

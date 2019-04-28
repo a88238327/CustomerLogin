@@ -1,0 +1,23 @@
+body,html{
+    max-width: 750px;
+    min-width: 375px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0 auto;
+    background-color: ghostwhite;
+}
+.content{
+    width: 100%;
+    top: 40px;
+    position: absolute;
+    margin-bottom: 80px;
+
+}
+.content .yonghuzhinantupian{
+    width: 50%;
+    display: block;
+    margin-top: 5px;
+    margin: 0 auto;
+}

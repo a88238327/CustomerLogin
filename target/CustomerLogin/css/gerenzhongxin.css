@@ -1,0 +1,163 @@
+body,html{
+    background-color: #f5f5f5;
+    height: 100%;
+}
+.body{
+    max-width: 750px;
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    height: 100%;
+}
+
+.header {
+    width: 96%;
+    height: 20%;
+    background-color: deepskyblue;
+    border-radius: 5px;
+    margin: 5px auto;
+    position: relative;
+    text-align: center;
+    display: block;
+}
+.header .box_left{
+    width: 50%;
+    left: 0;
+    position: absolute;
+    height: 100%;
+
+
+}
+.header .box_left a{
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%, 150%);
+}
+.header .box_left a p{
+    font-size: 2em;
+    color: white;
+}
+.header .box_right{
+    width: 50%;
+    right: 0;
+    height: 100%;
+    position: absolute;
+}
+.header .box_right a{
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, 90%);
+}
+.header .box_right a span{
+    font-size: 1.5em;
+    color: white;
+}
+.header .box_right a p{
+    font-size: 1.5em;
+    color: white;
+}
+.top{
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 40px;
+    background-color: dodgerblue;
+}
+.top span{
+    position: absolute;
+    left: 0;
+    font-size:1.3em;
+    color: white;
+    transform: translate(0, 50%);
+}
+.top p{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+    line-height: 40px;
+}
+.content{
+    width: 100%;
+}
+.content ul{
+
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 96%;
+
+}
+.content li{
+    background-color: dodgerblue;
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.content li a{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.content li a img{
+    width: 160px;
+    display: block;
+    margin: 0 auto;
+}
+.content li a p{
+    font-size: 1.1em;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+.updata{
+    width: 96%;
+    background-color: green;
+    margin: 0 auto;
+    border-radius: 5px;
+    position: relative;
+    height: 71px;
+    text-align: center;
+    display: block;
+}
+.updata #updata_left{
+    width: 50%;
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
+.updata #updata_left a{
+    width: 100%;
+}
+.updata #updata_left a img{
+    margin: 0 auto;
+    height: 40px;
+    transform: translate(0, 10%);
+}
+.updata #updata_left a p{
+    color: white;
+    transform: translate(0, 10%);
+
+}
+.updata #updata_right{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+.updata #updata_right a{
+    width: 100%;
+    position: relative;
+}
+.updata #updata_right a img{
+    height: 40px;
+    margin: 0 auto;
+    transform: translate(0, 10%);
+
+}
+.updata #updata_right a p{
+    color: white;
+    transform: translate(0, 10%);
+}

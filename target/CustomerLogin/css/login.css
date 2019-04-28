@@ -1,0 +1,17 @@
+html, body {
+	font-size: 14px;
+	max-width: 640px;
+	min-width: 320px;
+}
+
+.other {
+	max-width:310px;
+	margin: -55% auto;
+	color: black;
+}
+.captcha{
+	position:relative;
+	margin: 0 auto;
+	display: block;
+	color: black;
+}

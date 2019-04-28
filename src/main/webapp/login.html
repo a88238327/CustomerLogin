@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>車家网</title>
+<link rel="stylesheet" type="text/css" href="css/bass.css" />
+<link rel="stylesheet" type="text/css" href="css/duanxindenglu.css" />
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<body>
+<div class="div1">
+	<div id="tip"><p id="word"></p></div>
+		<img class="img1" src="img/denglubizhi.png">
+		<form action="#">
+		<div>
+		<img src="img/shoujihao.png">
+		<input type="text" id="phone" placeholder="输入手机号">
+		</div>
+		<div>
+		<img src="img/mima.png">
+		<input type="password" id="password" placeholder="输入密码">
+		</div>
+			<div class="check"><input type="checkbox" id="checkbox" value="ok"><p>自动登录</p></div>
+		<input type="button" class="button" value="确认"  onclick="userlogin1()">
+			<div class="textdiv">
+				<a href="smslogin.html">短信登录｜</a>
+				<a href="zhuce.html">快速注册｜</a>
+				<a href="userlogin">微信登录</a>
+			</div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+	var check="false";
+function userlogin1(){
+	var checkbox=document.getElementById("checkbox");
+	var $phone=$("#phone").val();
+	var $password=$("#password").val();
+	if($phone.length=11&$password!="")
+	{
+		if(checkbox.checked==true)
+		{
+			check="true";
+		}
+		$.post(
+		"loginservlet",
+		{
+			phone:$phone,
+			password:$password,
+			check:check
+		},
+		function(result){
+			if(result=="true") {
+			location.href='selectopenid';
+			}
+			else{
+				tip("账号或密码错误");
+			}
+		}
+	);
+	}
+	else {
+		tip("请检查输入");
+	}
+}
+	function tip(content) {
+		var tip=document.getElementById("tip");
+		var word=document.getElementById("word");
+		tip.style.display="block";
+		word.innerHTML=content;
+		setTimeout(function (){
+			tip.style.display="none";
+		},1000);
+	}
+</script>
+</html>

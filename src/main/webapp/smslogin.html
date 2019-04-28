@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>登录</title>
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/jigsaw.css">
+<link rel="stylesheet" type="text/css" href="css/bass.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/timer.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<body>
+<div id="tip"><p id="word">hallll</p></div>
+	<div class="div1">
+		<img class="img1" src="img/denglubizhi.png">
+		<form action="#">
+			<img src="img/shoujihao.png" class="shoujihao">
+			<input class="name" type="text" id="phone" placeholder="输入手机号">
+			<img src="img/mima.png" class="mima">
+			<div class="yanzheng" >
+				<input class="yanzhengma" type="text" id="yanzhengma" placeholder="输入验证码">
+				<input class="huoqu" id="huoqu" type="button" onclick="getjigsaw()" value="获取验证码">
+			</div>
+			<input type="button" class="button1" value="确认" onclick="userlogin1()">
+			<div class="textdiv">
+				<a href="login.html">密码登录｜</a>
+				<a href="zhuce.html">快速注册｜</a>
+				<a href="userlogin">微信登录</a>
+			</div>
+
+		</form>
+		<div class="other">
+			<div class="captcha" id="captcha" style="display: none; position: relative"></div>
+		</div>
+	</div>
+	<script src="js/jigsaw.js"></script>
+	<script>
+
+		var sms="false";
+		jigsaw.init(document.getElementById('captcha'), function() {
+			document.getElementById('captcha').style.display = 'none';
+			var $phone=$("#phone").val();
+			if(isPoneAvailable($phone))
+			{
+				$.post(
+						"smsloginservlet",
+						{
+							phone:$phone,
+							type:""
+						},
+						function(result){
+							if(result=="true")
+							{
+								sms="true";
+								tip("验证码已发送");
+								settime();
+							}
+							else {
+								tip("手机号错误");
+							}
+						}
+				);
+			}
+			else {
+				tip("请输入正确的手机号");
+			}
+
+		}, function() {
+			tip("验证失败！");
+		})
+
+		function getjigsaw() {
+			if(!isPoneAvailable($("#phone").val()))
+			{
+				tip("手机号格式不正确");
+			}
+			else {
+				alert("请先完成拼图认证！")
+				document.getElementById('captcha').style.display = 'block';
+				//document.getElementById('captcha').style.position = 'relative';
+			}
+		}
+		function userlogin1() {
+			if(sms=="true")
+			{
+				var $yanzhengma = $('#yanzhengma').val();
+				var $phone = $("#phone").val();
+				$.post(
+						"smsloginservlet",
+						{
+							code:$yanzhengma,
+							phone: $phone,
+							type: "check"
+						},
+						function (result) {
+							if (result == "true") {
+								location.href = 'selectopenid';
+							}
+							else if(result=="code_error")
+							{
+								tip("验证码错误");
+							}
+							else if(result=="phone_error")
+							{
+								tip("手机号已被修改");
+							}
+							else {
+								tip("账号未注册");
+							}
+						}
+				);
+			}
+			else {
+				tip("请先获取验证码");
+			}
+
+		}
+		function tip(word) {
+			var t=document.getElementById("tip");
+			var w=document.getElementById("word");
+			w.innerHTML=word;
+			t.style.display="block";
+			setTimeout(function () {
+				t.style.display="none";
+			},1000)
+		}
+		function isPoneAvailable(str) {
+			var myreg = /^[1][3,4,5,7,8][0-9]{9}$/;
+			if(!myreg.test(str)) {
+				return false;
+			} else {
+				return true;
+			}
+		}
+			
+	</script>
+</body>
+</html>
