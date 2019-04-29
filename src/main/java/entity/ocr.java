@@ -40,8 +40,8 @@ public class ocr {
         System.out.println(res.toString());
         if(res.has("words_result"))
         {
-        	System.out.println(res.getString("words_result").toString());
-            return res.getString("words_result").toString();
+        	System.out.println(res.get("words_result").toString());
+            return res.get("words_result").toString();
         }
         return "error";
         
@@ -61,8 +61,8 @@ public class ocr {
         System.out.println(res.toString());
         if(res.has("words_result"))
         {
-	        System.out.println(res.getString("words_result").toString());
-	        return res.getString("words_result").toString();
+	        System.out.println(res.get("words_result").toString());
+	        return res.get("words_result").toString();
         }
         return "error";
         
@@ -80,8 +80,8 @@ public class ocr {
         System.out.println(res.toString());
         if(res.has("words_result"))
         {
-	        System.out.println(res.getString("words_result").toString());
-	        return res.getString("words_result").toString();
+	        System.out.println(res.get("words_result").toString());
+	        return res.get("words_result").toString();
         }
         return "error";
 	}
@@ -98,8 +98,8 @@ public class ocr {
         System.out.println(res.toString());
         if(res.has("words_result"))
         {
-	        System.out.println(res.getString("words_result").toString());
-	        return res.getString("words_result").toString();
+	        System.out.println(res.get("words_result").toString());
+	        return res.get("words_result").toString();
         }
         return "error";
 	}
