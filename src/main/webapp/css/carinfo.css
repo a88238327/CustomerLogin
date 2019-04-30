@@ -1,0 +1,147 @@
+.box{
+    width: 100%;
+}
+.choose_carnum{
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+    margin: 10px auto;
+
+}
+.tip_no_info{
+    font-size: 1.5em;
+    text-align: center;
+}
+.choose_carnum_p{
+    font-weight: bold;
+    font-size: 1.4em;
+
+}
+.box .box_header{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.box .box_header img{
+    width: 100%;
+    height: 120px;
+    background-color: dodgerblue;
+    display: block;
+}
+.box .box_header .header_info{
+    width: 88%;
+    height: 90px;
+    background-color: white;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    top: 100px;
+    margin-left: 6%;
+    box-shadow: 0 0 10px gray;
+
+}
+.box .box_header .header_info .header_info_carnum{
+    border-bottom: 2px ghostwhite solid;
+    font-size: 2em;
+    position: relative;
+    padding-left: 10px;
+    height: 50px;
+    line-height: 50px;
+}
+.box .box_header .header_info .header_info_carnum #info_carnum{
+
+}
+.box .box_header .header_info .header_info_carnum .right_span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.2em;
+    line-height: 50px;
+    opacity: 0.8;
+}
+.box .box_header .header_info .header_info_type{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+.box .box_header .header_info .header_info_type #car_type{}
+.box .box_body{
+    width: 100%;
+
+    height: 200px;
+    margin-top: 70px;
+}
+.box .box_body .baoxian_info{
+    width: 100%;
+}
+.box .box_body .baoxian_info .baoxian_info_head{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    line-height: 40px;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-left: 10px;
+
+}
+.box .box_body .baoxian_info .baoxian_info_content{
+    width: 100%;
+}
+.box .box_body .baoxian_info .baoxian_info_content ul{
+    width: 100%;
+}
+.box .box_body .baoxian_info .baoxian_info_content ul li{
+    width: 100%;
+    font-size: 1.3em;
+    padding-left: 15px;
+    padding-right: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.box .box_body .baoxian_info .baoxian_info_content ul li p{
+    float: left;
+
+}
+.box .box_body .baoxian_info .baoxian_info_content ul li .bujimianpei{
+    background-color: #95fffc;
+    color: dodgerblue;
+    border-radius: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    height: 18px;
+    font-size: 0.8rem;
+    line-height: 18px;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+.box .box_body .baoxian_info .baoxian_info_content ul li span{
+    float: right;
+}
+.box .box_body .baoxian_info .updata_baoxian_info{
+    width: 80%;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 1.4em;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+
+}
+.box .box_body .baoxian_info .buy_baoxian{
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    color: dodgerblue;
+    display: block;
+    font-size: 1.3em;
+
+}
