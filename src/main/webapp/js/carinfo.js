@@ -7,7 +7,7 @@ var start = function () {
         location.href = "cars";
     }
 };
-var carnumjson = getusercar();
+//var carnumjson = getusercar();
 
 function getusercar() {
     $.get(
@@ -86,6 +86,6 @@ function createbaoxianinfo(baoxianjson) {
 window.onload = function () {
     getcarinfo(url_carnum);
     $("#updata_baoxian_info").click(function () {
-        location.href="addbaoxian.html?carnum"+url_carnum;
+        location.href="addbaoxian.html?carnum="+url_carnum;
     })
 };
