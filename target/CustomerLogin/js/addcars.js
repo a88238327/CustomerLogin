@@ -263,13 +263,15 @@ window.onload = function () {
                             imgurl: dataurl
                         },
                         function (result) {
+                        if(result=="error")
+                            {
+                                alert("识别错误");
+                                return;
+                            }
                             var obj = JSON.parse(result);
                             load.style.display = "none";
                             if (obj.号牌号码.words != haopaihaoma) {
                                 alert("请上传同一台车的副本");
-                            }else if(result=="error")
-                            {
-                                alert("识别错误");
                             }
                             else {
                                 var str = obj.检验记录.words;

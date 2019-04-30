@@ -1,5 +1,7 @@
 package servlet;
 
+import entity.selectdata;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,6 +23,9 @@ public class getusercar extends HttpServlet {
         HttpSession session=request.getSession();
         if(session.getAttribute("phone")!=null)
         {
+            String phone=session.getAttribute("phone").toString();
+            String res= selectdata.getcars(phone);
+            response.getWriter().write(res);
 
         }else {
             response.getWriter().write("needlogin");
