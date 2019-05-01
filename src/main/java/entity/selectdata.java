@@ -1058,7 +1058,7 @@ public class selectdata {
 		String driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";//驱动类
 		String username=new DataUser().getUsername();//数据库用户名
 		String DBpassword=new DataUser().getPassword();//数据库密码
-		String sql="select cars.号牌号码,cars.品牌型号,insurance,Excluding_deductible,type from cars left join insurance on cars.号牌号码=insurance.号牌号码 where cars.号牌号码='"+carnum+"' and insurance.createtime=(select max(createtime) from insurance where 号牌号码='"+carnum+"' )";//查询语句
+		String sql="select insurance,Excluding_deductible,type from insurance where 号牌号码='"+carnum+"' and insurance.createtime=(select max(createtime) from insurance where 号牌号码='"+carnum+"' )";//查询语句
 		System.out.println(sql);
 		ArrayList<HashMap<String,String>> list=new ArrayList<>();
 		String DBurl=new DataUrl().getUrl();//连接数据库的地址
@@ -1073,8 +1073,6 @@ public class selectdata {
 			{
 
 				HashMap<String , String > map=new HashMap<String, String>();
-				map.put("号牌号码", rs.getString("号牌号码"));
-				map.put("品牌型号", rs.getString("品牌型号"));
 				map.put("insurance", rs.getString("insurance"));
 				map.put("Excluding_deductible", rs.getString("Excluding_deductible"));
 				map.put("type", rs.getString("type"));
@@ -1089,6 +1087,44 @@ public class selectdata {
 			}
 			JSONArray jsonArray=JSONArray.fromObject(list);
 			return jsonArray.toString();
+
+		}catch (Exception e) {
+			System.out.println(e);
+		}
+
+		return null;
+	}
+
+	public static HashMap<String, String> getcarsinfo(String carnum) {
+		Connection conn=null;
+		Statement stmt=null;
+		PreparedStatement pstmt	= null ;
+		String driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";//驱动类
+		String username=new DataUser().getUsername();//数据库用户名
+		String DBpassword=new DataUser().getPassword();//数据库密码
+		String sql="select 品牌型号 from cars where 号牌号码='"+carnum+"'";//查询语句
+		System.out.println(sql);
+		HashMap<String , String > map=new HashMap<String, String>();
+		String DBurl=new DataUrl().getUrl();//连接数据库的地址
+		try{
+			Class.forName(driver);//加载驱动器类
+			conn=DriverManager.getConnection(DBurl,username,DBpassword);//建立连接
+			//建立处理的SQL语句
+			pstmt = conn.prepareStatement(sql) ;
+			System.out.println(pstmt.toString());
+			ResultSet rs=pstmt.executeQuery();
+			while(rs.next())
+			{
+				map.put("品牌型号", rs.getString("品牌型号"));
+			}
+			rs.close();
+			pstmt.close();//关闭SQL语句集
+			conn.close();//关闭连接
+			if(map.isEmpty())
+			{
+				return null;
+			}
+			return map;
 
 		}catch (Exception e) {
 			System.out.println(e);
