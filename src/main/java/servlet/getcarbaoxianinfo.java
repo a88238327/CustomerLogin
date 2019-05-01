@@ -14,7 +14,7 @@ public class getcarbaoxianinfo extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf8");
         response.setCharacterEncoding("utf8");
-        String carnum=request.getParameter("num");
+        String carnum=request.getParameter("carnum");
         String str= selectdata.getcarbaoxianinfo(carnum);
         response.getWriter().write(str);
     }

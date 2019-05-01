@@ -1,6 +1,6 @@
 var url_carnum = "";
 var url_carnum = GetQueryString("carnum");
-
+alert(url_carnum);
 var start = function () {
     if (url_carnum == "") {
         alert("请先选择车辆");
@@ -21,7 +21,16 @@ function getusercar() {
                 location.href = "cars";
             } else {
                 var obj = JSON.parse(result);
-                return obj;
+                for (var i=0;i<obj.length;i++)
+                {
+                    if (url_carnum==obj[i].carnum)
+                    {
+                        return obj;
+                    }
+                }
+                alert("您还未添加该车辆");
+                location.href="car.html";
+
             }
 
         }
@@ -49,6 +58,7 @@ function getcarinfo(num) {
             carnum: num
         },
         function (result) {
+            console.log(result);
             url_carnum=num;
             if (result == "noinsurance") {
                 createtip();

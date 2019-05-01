@@ -1058,9 +1058,9 @@ public class selectdata {
 		String driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";//驱动类
 		String username=new DataUser().getUsername();//数据库用户名
 		String DBpassword=new DataUser().getPassword();//数据库密码
-		String sql="select cars.号牌号码,cars.品牌型号,insurance,Excluding_deductible,type from cars,insurance where cars.号牌号码='"+carnum+"' and cars.号牌号码=insurance.号牌号码 and insurance.createtime=(select max(createtime) from insurance where 号牌号码='"+carnum+"' )";//查询语句
+		String sql="select cars.号牌号码,cars.品牌型号,insurance,Excluding_deductible,type from cars left join insurance on cars.号牌号码=insurance.号牌号码 where cars.号牌号码='"+carnum+"' and insurance.createtime=(select max(createtime) from insurance where 号牌号码='"+carnum+"' )";//查询语句
 		System.out.println(sql);
-		HashMap<String , String > map=new HashMap<String, String>();
+		ArrayList<HashMap<String,String>> list=new ArrayList<>();
 		String DBurl=new DataUrl().getUrl();//连接数据库的地址
 		try{
 			Class.forName(driver);//加载驱动器类
@@ -1072,21 +1072,23 @@ public class selectdata {
 			while(rs.next())
 			{
 
+				HashMap<String , String > map=new HashMap<String, String>();
 				map.put("号牌号码", rs.getString("号牌号码"));
-				map.put("品牌型号", rs.getString("号牌号码"));
+				map.put("品牌型号", rs.getString("品牌型号"));
 				map.put("insurance", rs.getString("insurance"));
 				map.put("Excluding_deductible", rs.getString("Excluding_deductible"));
 				map.put("type", rs.getString("type"));
+				list.add(map);
 			}
 			rs.close();
 			pstmt.close();//关闭SQL语句集
 			conn.close();//关闭连接
-			if(map.isEmpty())
+			if(list.isEmpty())
 			{
 				return "noinsurance";
 			}
-			JSONObject jsonObject=JSONObject.fromObject(map);
-			return jsonObject.toString();
+			JSONArray jsonArray=JSONArray.fromObject(list);
+			return jsonArray.toString();
 
 		}catch (Exception e) {
 			System.out.println(e);
