@@ -58,16 +58,16 @@ function getcarinfo(num) {
             carnum: num
         },
         function (result) {
+            var obj = JSON.parse(result);
             console.log(result);
             url_carnum=num;
-            if (result == "noinsurance") {
+            $("#info_carnum").html(num);
+            $("#car_type").html(obj.品牌型号);
+            if (obj.insurance == "noinsurance") {
                 createtip();
             } else {
-                var obj = JSON.parse(result);
-
-                $("#info_carnum").html(num);
-                $("#car_type").html(obj[0].品牌型号);
-                createbaoxianinfo(obj);
+                var baoxianjson=JSON.parse(obj.insurance);
+                createbaoxianinfo(baoxianjson);
             }
 
         }
