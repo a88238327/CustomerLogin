@@ -1016,7 +1016,7 @@ public class selectdata {
 		String driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";//驱动类
 		String username=new DataUser().getUsername();//数据库用户名
 		String DBpassword=new DataUser().getPassword();//数据库密码
-		String sql="select 号牌号码,品牌型号 from cars where phone='"+phone+"'";//查询语句
+		String sql="select 号牌号码 from cars where phone='"+phone+"'";//查询语句
 		System.out.println(sql);
 		ArrayList<HashMap<String,String>> list=new ArrayList<>();
 		String DBurl=new DataUrl().getUrl();//连接数据库的地址
@@ -1031,7 +1031,6 @@ public class selectdata {
 			{
 				HashMap<String , String > map=new HashMap<String, String>();
 				map.put("号牌号码", rs.getString("号牌号码"));
-				map.put("品牌型号", rs.getString("品牌型号"));
 				list.add(map);
 			}
 			rs.close();

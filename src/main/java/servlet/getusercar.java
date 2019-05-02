@@ -20,15 +20,16 @@ public class getusercar extends HttpServlet {
 
         request.setCharacterEncoding("utf8");
         response.setCharacterEncoding("utf8");
-        HttpSession session=request.getSession();
-        if(session.getAttribute("phone")!=null)
-        {
-            String phone=session.getAttribute("phone").toString();
-            String res= selectdata.getcars(phone);
-            response.getWriter().write(res);
-
-        }else {
-            response.getWriter().write("needlogin");
-        }
+        HttpSession session = request.getSession();
+//        if(session.getAttribute("phone")!=null)
+//        {
+        String phone = "17508910598";
+//            String phone=session.getAttribute("phone").toString();
+        String res = selectdata.getcars(phone);
+        response.getWriter().write(res);
+//
+//        }else {
+//            response.getWriter().write("needlogin");
+//        }
     }
 }
