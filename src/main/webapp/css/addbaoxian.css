@@ -1,3 +1,27 @@
+.box{
+    width: 100%;
+}
+.choose_carnum{
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+    margin: 10px auto;
+
+}
+.tip_no_info{
+    font-size: 1.5em;
+    text-align: center;
+}
+.choose_carnum_p{
+    font-weight: bold;
+    font-size: 1.4em;
+
+}
 .box .box_header{
     width: 100%;
     display: block;
