@@ -4,9 +4,11 @@
     <title>車家网</title>
     <link rel="stylesheet" type="text/css" href="css/footer.css"/>
     <link rel="stylesheet" type="text/css" href="css/bass.css"/>
-    <link rel="stylesheet" type="text/css" href="css/addbaoxian.css?341"/>
+    <link rel="stylesheet" type="text/css" href="css/addbaoxian.css?351"/>
+    <link rel="stylesheet" type="text/css" href="css/pickerView.css?351"/>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/getkey.js"></script>
+    <script src="js/pickerView.js"></script>
     <script src="js/layer.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
@@ -17,7 +19,7 @@
     <div class="box_header">
         <img id="ad">
         <div class="header_info">
-            <div class="heasder_info_carnum" onclick="createchoosecarnum()">
+            <div class="header_info_carnum" onclick="createchoosecarnum()">
                 <p id="info_carnum"></p><span class="right_span" >&gt;</span>
             </div>
             <div class="header_info_type">
@@ -25,8 +27,26 @@
             </div>
         </div>
     </div>
+    <div class="box_body">
+        <div class="baoxian_info">
+            <div class="baoxian_info_head"><p>请确认一下投保信息（点击要投保项）</p></div>
+            <div class="baoxian_info_content">
+                <ul id="baoxian_info_content_ul">
+<!--                                        <li><div class="tip_no_info">请点击下方更新信息</div></li>-->
+<!--                                        <li><p>交强险</p><p class="bujimianpei" style="display: none">不计免赔</p><span>不投保</span></li>-->
+<!--                                        <li><p>机动车损失险</p><p class="bujimianpei">不计免赔</p><span>不投保</span></li>-->
+<!--                                        <li><p>第三者责任险</p><p class="bujimianpei">不计免赔</p><span>不投保</span></li>-->
+<!--                                        <li><p>司机责任险</p><p class="bujimianpei">不计免赔</p><span>不投保</span></li>-->
+<!--                                        <li><p>乘客责任险</p><p class="bujimianpei">不计免赔</p><span>不投保</span></li>-->
+                </ul>
+            </div>
+            <div id="updata_baoxian_info">确认以上，开始报价</div>
+        </div>
+    </div>
 </div>
 
 </body>
 <script src="js/addbaoxian.js"></script>
+
+
 </html>

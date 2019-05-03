@@ -1,3 +1,9 @@
+layer.open({
+    type: 2,
+    shadeClose: false,
+    content: '加载中'
+
+});
 var url_carnum = "";
 var url_carnum = GetQueryString("carnum");
 var start = function () {
@@ -57,6 +63,12 @@ function createchoosecarnum() {
 }
 
 function getcarinfo(num) {
+    layer.open({
+        type: 2,
+        shadeClose: false,
+        content: '加载中'
+
+    });
     $.post(
         "getcarbaoxianinfo",
         {
@@ -75,6 +87,7 @@ function getcarinfo(num) {
                 var baoxianjson=JSON.parse(obj.insurance);
                 createbaoxianinfo(baoxianjson);
             }
+            layer.closeAll();
 
         }
     );
@@ -105,5 +118,5 @@ window.onload = function () {
 
     $("#updata_baoxian_info").click(function () {
         location.href="addbaoxian.html?carnum="+url_carnum;
-    })
+    });
 };
