@@ -116,7 +116,7 @@ window.onload = function () {
     getusercar();
     getcarinfo(url_carnum);
 
-    $("#updata_baoxian_info").click(function () {
-        location.href="addbaoxian.html?carnum="+url_carnum;
+    $("#buy_baoxian").click(function () {
+        location.href="buybaoxian.html?carnum="+url_carnum;
     });
 };
