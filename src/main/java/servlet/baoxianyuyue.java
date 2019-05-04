@@ -1,5 +1,7 @@
 package servlet;
 
+import entity.insert;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,17 +17,17 @@ public class baoxianyuyue extends HttpServlet {
         request.setCharacterEncoding("utf8");
         response.setCharacterEncoding("utf8");
         HttpSession session = request.getSession();
-//        if (session.getAttribute("phone")!=null)
-//        {
+        if (session.getAttribute("phone")!=null)
+        {
         String phone = "17508910598";//session.getAttribute("phone").toString();
         String buybaoxian = request.getParameter("buybaoxian");
         System.out.println(buybaoxian);
         String carnum = request.getParameter("carnum");
         insert.addbaoxianyuyue(phone, buybaoxian, carnum);
         response.getWriter().write("true");
-//        }else {
-//            response.getWriter().write("needlogin");
-//        }
+        }else {
+            response.getWriter().write("needlogin");
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

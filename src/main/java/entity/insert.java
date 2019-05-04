@@ -1,4 +1,4 @@
-package servlet;
+package entity;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -67,11 +67,9 @@ public class insert {
 		}
     }
 
-    public static void addbaoxianinfo(String insurance, String Excluding_deductible, String carnum, String phone, String startdata, String enddata, String type, String img_name) {
+    public static void addbaoxianinfo(String createtime,String insurance, String Excluding_deductible, String carnum, String phone, String startdata, String enddata, String type, String img_name) {
 		Connection conn=null;
 		PreparedStatement pstmt	= null ;
-		SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");//设置日期格式
-		String createtime=df.format(new Date());
 		String driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";//驱动类
 		String username=new DataUser().getUsername();//数据库用户名
 		String DBpassword=new DataUser().getPassword();//数据库密码

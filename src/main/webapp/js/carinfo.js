@@ -102,7 +102,7 @@ function createtip() {
 function createbaoxianinfo(baoxianjson) {
     $("#baoxian_info_content_ul").html("");
     for (var i = 0; i < baoxianjson.length; i++) {
-        if (baoxianjson[i].Excluding_deductible == "true") {
+        if (baoxianjson[i].Excluding_deductible == "不计免赔") {
             $("#baoxian_info_content_ul").append('<li><p>' + baoxianjson[i].insurance + '</p><p class="bujimianpei" style="display: block">不计免赔</p><span >' + baoxianjson[i].type + '</span></li>');
 
         } else {
@@ -118,5 +118,8 @@ window.onload = function () {
 
     $("#buy_baoxian").click(function () {
         location.href="buybaoxian.html?carnum="+url_carnum;
+    });
+    $("#updata_baoxian_info").click(function () {
+        location.href="addbaoxian.html?carnum="+url_carnum;
     });
 };

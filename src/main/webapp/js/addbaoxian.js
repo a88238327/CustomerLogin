@@ -230,10 +230,9 @@ window.onload = function () {
         for (var item in buybaoxian) {
             if (buybaoxian[item][0] != "不投保") {
                 flag=true;
-                if (item=!"交强险")
+                if (item!="交强险")
                 {
                     shangyexianbaodan=true;
-
                 }
                 break;
             }
@@ -247,7 +246,7 @@ window.onload = function () {
         {
             tip("请上传交强险保单照片");
         }
-        else if (shangyexianbaodan&&img_shangye=="")
+        else if (shangyexianbaodan==true&&img_shangye=="")
         {
             tip("请上传商业险保单照片");
         }

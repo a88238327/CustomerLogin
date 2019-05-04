@@ -7,10 +7,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Iterator;
 
 import entity.base64tofile;
 import entity.file;
+import entity.insert;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
@@ -22,7 +25,7 @@ public class addbaoxianinfo extends HttpServlet {
         HttpSession session=request.getSession();
         if (session.getAttribute("phone")!=null)
         {
-            String phone ="17508910598";//session.getAttribute("phone").toString();
+            String phone =session.getAttribute("phone").toString();
             String img_jiaoqiang=request.getParameter("img_jiaoqiang");
             String img_shangye=request.getParameter("img_shangye");
             String buybaoxian=request.getParameter("buybaoxian");
@@ -39,12 +42,15 @@ public class addbaoxianinfo extends HttpServlet {
             }
             if (base64tofile.GenerateImage(img_shangye, file.shangyexian+carnum+"商业险.jpg")){
                 System.out.println("商业险存储成功");
-                return;
+
             }else {
                 response.getWriter().write("false");
+                return;
             }
             JSONObject jsonObject=JSONObject.fromObject(buybaoxian);
             Iterator<String> iterator=jsonObject.keys();
+        SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");//设置日期格式
+        String createtime=df.format(new Date());
             while (iterator.hasNext()){
                 String key=iterator.next();
                 System.out.println(key);
@@ -54,9 +60,16 @@ public class addbaoxianinfo extends HttpServlet {
                     JSONArray jsonArray=JSONArray.fromObject(jsonObject.getString(key));
                     if (jsonArray.getString(0).equals("投保"))
                     {
+                        String Excluding_deductible;
                         String img_name=carnum+"交强险.jpg";
-                        String Excluding_deductible=jsonArray.get(1).toString();
-                        insert.addbaoxianinfo(key,Excluding_deductible,carnum,phone,jiaoqiangxian_date_start,jiaoqiangxian_date_end,jsonArray.getString(0),img_name);
+                        if (jsonArray.size()<2)
+                        {
+                            Excluding_deductible="";
+                        }
+                        else {
+                            Excluding_deductible=jsonArray.get(1).toString();
+                        }
+                        insert.addbaoxianinfo(createtime,key,Excluding_deductible,carnum,phone,jiaoqiangxian_date_start,jiaoqiangxian_date_end,jsonArray.getString(0),img_name);
                     }
                 }
                 else {
@@ -64,9 +77,16 @@ public class addbaoxianinfo extends HttpServlet {
                     JSONArray jsonArray=JSONArray.fromObject(jsonObject.getString(key));
                     if (!jsonArray.getString(0).equals("不投保"))
                     {
+                        String Excluding_deductible;
                         String img_name=carnum+"商业险.jpg";
-                        String Excluding_deductible=jsonArray.get(1).toString();
-                        insert.addbaoxianinfo(key,Excluding_deductible,carnum,phone,shangyexian_date_start,shangyexian_date_end,jsonArray.getString(0),img_name);
+                        if (jsonArray.size()<2)
+                        {
+                            Excluding_deductible="";
+                        }
+                        else {
+                            Excluding_deductible=jsonArray.get(1).toString();
+                        }
+                        insert.addbaoxianinfo(createtime,key,Excluding_deductible,carnum,phone,shangyexian_date_start,shangyexian_date_end,jsonArray.getString(0),img_name);
                     }
                 }
             }

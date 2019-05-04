@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import entity.insert;
 import entity.selectdata;
 
 /**
@@ -45,7 +46,7 @@ public class accident extends HttpServlet {
 				String eventcontent=servicename;
 				if(!selectdata.apponintment_exist(phone,eventcontent))
 				{
-					insert.appointment(phone,eventcontent);					
+					insert.appointment(phone,eventcontent);
 				}
 				//response.getWriter().write("<meta charset=\"UTF-8\"><script>alert(\"用户未满足要求，已为您安排工作人员，稍后联系您！\");location.href=\"shouye.html\";</script>");
 				request.getRequestDispatcher("tip1.html").forward(request,response);
