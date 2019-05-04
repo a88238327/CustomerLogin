@@ -39,7 +39,7 @@ window.onload=function () {
                             li.addEventListener("click", function () {
                                 if (servicename=="提醒")
                                 {
-                                    location.href = "shenqing.html?carnum=" + carnum+"&servicename="+servicename;
+                                    location.href = "remind.html?carnum=" + carnum;
 
                                 }else {
                                     location.href = "shenqing.html?carnum=" + carnum+"&servicename="+servicename;

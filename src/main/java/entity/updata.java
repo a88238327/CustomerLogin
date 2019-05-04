@@ -13,7 +13,7 @@ public class updata {
         String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";//驱动类
         String username = new DataUser().getUsername();//数据库用户名
         String DBpassword = new DataUser().getPassword();//数据库密码
-        String sql = "update remind set stauts='"+stauts+"' where phone='"+phone+"' and 号牌号码='"+phone+"' and remmind_content='"+remind_content+"'";//查询语句
+        String sql = "update remind set stauts='"+stauts+"' where phone='"+phone+"' and 号牌号码='"+carnum+"' and remmind_content='"+remind_content+"'";//查询语句
         System.out.println(sql);
         String DBurl = new DataUrl().getUrl();//连接数据库的地址
         try {

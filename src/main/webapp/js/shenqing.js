@@ -121,7 +121,6 @@ window.onload = function () {
         location.href="buybaoxian.html?carnum="+url_carnum;
     });
     $("#updata_baoxian_info").click(function () {
-        location.href="accident?carnum="+url_carnum;
         $.post(
             "accident",
             {
