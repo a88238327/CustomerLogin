@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>車家网</title>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bass.css"/>
+    <link rel="stylesheet" type="text/css" href="css/remind.css?341"/>
+    <link rel="stylesheet" type="text/css" href="css/honeySwitch.css?341"/>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/getkey.js"></script>
+    <script src="js/honeySwitch.js"></script>
+    <script src="js/layer.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<body>
+<header style="background-color: rgba(0,0,1,0.1)"><span onClick="javascript:history.back(-1);">&lt;</span>
+    <p id="carnum">提醒</p></header>
+<div class="box">
+    <div class="box_header">
+        <img id="ad">
+        <div class="header_info">
+            <div class="header_info_carnum" onclick="createchoosecarnum()">
+                <p id="info_carnum"></p><span class="right_span">&gt;</span>
+            </div>
+            <div class="header_info_type">
+                <p id="car_type"></p>
+            </div>
+        </div>
+    </div>
+    <div class="box_body">
+        <div class="baoxian_info">
+            <div class="baoxian_info_head"><p>请选择要开始提醒的项目</p></div>
+            <div class="baoxian_info_content">
+                <ul id="baoxian_info_content_ul">
+                    <li><p>车辆年审提醒</p><div class="kaiguan"><span id="kaiguan1" class="switch-on" themeColor="#6d9eeb"></span></div> </li>
+                    <li><p>保险到期提醒</p><span>投保</span><</li>
+                    <li><p>驾照年审提醒</p><span>投保</span></li>
+                    <!--                    <li><p>第三者责任险</p><p class="bujimianpei">不计免赔</p><span>30万</span></li>-->
+                    <!--                    <li><p>司机责任险</p><p class="bujimianpei">不计免赔</p><span>1万</span></li>-->
+                    <!--                    <li><p>乘客责任险</p><p class="bujimianpei">不计免赔</p><span>1万</span></li>-->
+                </ul>
+            </div>
+            <div id="updata_baoxian_info">确认</div>
+            <div id="buy_baoxian">保险到期了?</div>
+        </div>
+    </div>
+</div>
+<footer>
+    <ul class="clf">
+        <li><a href="shouye.html"><img src="img/shouye.png">
+            <p>首页</p></a></li>
+        <li><a href="jifenshangcheng.html"><img src="img/shangcheng.png">
+            <p>积分商城</p></a></li>
+        <li><a href="dingdan.html"><img src="img/dingdan.png">
+            <p>订单</p></a></li>
+        <li><a href="gerenzhongxin.html"><img src="img/wode.png">
+            <p>我的</p></a></li>
+    </ul>
+</footer>
+</body>
+<!--<script src="js/remind.js"></script>-->
+<script>
+
+</script>
+</html>

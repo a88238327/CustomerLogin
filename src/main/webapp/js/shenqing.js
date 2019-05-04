@@ -5,6 +5,7 @@ layer.open({
 
 });
 var url_carnum = "";
+var servicename = GetQueryString("servicename");
 var url_carnum = GetQueryString("carnum");
 var start = function () {
     if (url_carnum == "") {
@@ -24,7 +25,7 @@ function getusercar() {
                 location.href = "userlogin";
             } else if (result == "nocar") {
                 alert("您还未添加车辆");
-                location.href = history.back(-1);
+                location.href = "cars";
             } else {
                 var obj = JSON.parse(result);
                 for (var i=0;i<obj.length;i++)
@@ -120,6 +121,25 @@ window.onload = function () {
         location.href="buybaoxian.html?carnum="+url_carnum;
     });
     $("#updata_baoxian_info").click(function () {
-        location.href="addbaoxian.html?carnum="+url_carnum;
+        location.href="accident?carnum="+url_carnum;
+        $.post(
+            "accident",
+            {
+                carnum:url_carnum,
+                content:servicename
+            },
+            function (result) {
+                if (result=="needlogin")
+                {
+                    alert("请先登录");
+                    location.href="userlogin";
+                }
+                else
+                {
+                    alert("申请成功，稍后有工作人员联系您，请保持通话畅通");
+                    location.href="shouye.html"
+                }
+            }
+        );
     });
 };

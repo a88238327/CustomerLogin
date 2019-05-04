@@ -334,7 +334,7 @@ window.onload = function () {
                 function (result) {
                     if (result == "true") {
                         alert("添加成功");
-                        location.href = "cars.html";
+                        location.href = history.back(-1);
                     } else {
                         alert("添加失败该车辆已存在");
                     }

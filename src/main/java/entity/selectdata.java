@@ -1096,7 +1096,6 @@ public class selectdata {
 
 	public static HashMap<String, String> getcarsinfo(String carnum) {
 		Connection conn=null;
-		Statement stmt=null;
 		PreparedStatement pstmt	= null ;
 		String driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";//驱动类
 		String username=new DataUser().getUsername();//数据库用户名
@@ -1131,4 +1130,45 @@ public class selectdata {
 
 		return null;
 	}
+
+    public static String hasremind(String carnum, String phone) {
+		Connection conn=null;
+		PreparedStatement pstmt	= null ;
+		String driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";//驱动类
+		String username=new DataUser().getUsername();//数据库用户名
+		String DBpassword=new DataUser().getPassword();//数据库密码
+		String sql="select remmind_content,stauts from remind where 号牌号码='"+carnum+"' and phone='"+phone+"'";//查询语句
+		System.out.println(sql);
+		ArrayList<HashMap<String,String>> list=new ArrayList<>();
+		String DBurl=new DataUrl().getUrl();//连接数据库的地址
+		try{
+		    Class.forName(driver);//加载驱动器类
+		    conn=DriverManager.getConnection(DBurl,username,DBpassword);//建立连接
+		    //建立处理的SQL语句
+		    pstmt = conn.prepareStatement(sql) ;
+		    System.out.println(pstmt.toString());
+		    ResultSet rs=pstmt.executeQuery();
+		    while(rs.next())
+		    {
+				HashMap<String , String > map=new HashMap<String, String>();
+		        map.put("remmind_content", rs.getString("remmind_content"));
+		        map.put("stauts", rs.getString("stauts"));
+		        list.add(map);
+		    }
+		    rs.close();
+		    pstmt.close();//关闭SQL语句集
+		    conn.close();//关闭连接
+		    if(list.isEmpty())
+		    {
+		        return "";
+		    }
+		    JSONArray jsonArray=JSONArray.fromObject(list);
+		    return jsonArray.toString();
+
+		}catch (Exception e) {
+		    System.out.println(e);
+		}
+
+		return null;
+    }
 }

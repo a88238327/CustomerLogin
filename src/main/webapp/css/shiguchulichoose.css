@@ -1,6 +1,5 @@
 .box {
     width: 100%;
-    margin-bottom: 50px;
 }
 
 .choose_carnum {
@@ -87,9 +86,8 @@
 
 .box .box_body {
     width: 100%;
-
     height: 200px;
-    margin-top: 70px;
+    margin-top: 5px;
 }
 
 .box .box_body .baoxian_info {
@@ -198,4 +196,120 @@ select {
 /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
 select::-ms-expand {
     display: none;
+}
+.img_box{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.img_box_left{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.img_box_right{
+    width: 50%;
+    float: right;
+    overflow: hidden;
+    position: relative;
+}
+.upimg{
+    float: left;
+    width: 50%;
+    display: block;
+    border: 1px #1e90ff solid;
+    border-radius: 5px;
+    margin-left: 25%;
+    position: relative;
+    height: 100px;
+}
+input{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    height: 30px;
+    line-height: 30px;
+    width: 50%;
+    bottom: 0;
+}
+.img_imput{
+    width: 50%;
+    float: left;
+    height: 100px;
+    display: block;
+    margin-left: 25%;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+}
+.img_box p{
+    font-size: 1.3em;
+    color: dodgerblue;
+    position: absolute;
+    height: 30px;
+    display: block;
+    margin-left: 26%;
+    margin-top: 30px;
+}
+
+.tianjia{
+    width: 70%;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px dodgerblue dashed;
+    margin: 10px auto;
+}
+.tianjia .a{
+    width: 50%;
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+}
+.tianjia .a img{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 5px auto;
+    display: block;
+}
+.tianjia .a p{
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.3em;
+}
+#content{
+    width: 98%;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+#content li{
+    background-color: dodgerblue;
+    width: 100%;
+    margin: 5px auto;
+    height: 60px;
+    display: block;
+    border-radius: 15px;
+    position: relative;
+
+}
+#content li p{
+    width: 98%;
+    color: white;
+    height: 55px;
+    font-size: 3em;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px white solid;
+    display: block;
+    margin: 0 auto;
+    top:2.5px;
+    left: 4px;
+    position: absolute;
 }
