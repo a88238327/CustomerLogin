@@ -65,3 +65,44 @@ function createzengzhi(array) {
         p.innerHTML=array[i].title;
     }
 }
+window.onload = function () {
+    $.post(
+        "shouye",
+        {
+            type: "getimg"
+        },
+        function (result) {
+            var obj = JSON.parse(result);
+            createCarousel(obj.carousel);
+            banner(obj.carousel.length + 2);
+            createfuli(obj.fuli);
+            createzengzhi(obj.zengzhi);
+        }
+    );
+    $("#shiguchuli").click(function () {
+        location.href="shenqingchoose.html?servicename=事故处理"
+    });
+    $("#mianfeinianshen").click(function () {
+        location.href="shenqingchoose.html?servicename=免费年审"
+    });
+    $("#tixing").click(function () {
+        location.href="shenqingchoose.html?servicename=提醒"
+    });
+};
+
+function getphone() {
+    var customerphone;
+    $.get(
+        "getphone",
+        function (result) {
+            if (result == "needlogin") {
+                location.href = "userlogin";
+            } else {
+                customerphone = result;
+            }
+            console.log("https://cloud.hnjtbf.com/service/customerlogin?phone=" + customerphone);
+            location.href = "https://cloud.hnjtbf.com/service/customerlogin?phone=" + customerphone;
+
+        }
+    );
+}

@@ -55,3 +55,10 @@ window.onload=function () {
     );
 
 };
+function insert_flg(str, flg, sn) {
+    var newstr = "";
+    var tmp = str.substring(0, sn);
+    newstr += tmp + flg + str.substring(sn, str.length);
+
+    return newstr;
+}

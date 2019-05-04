@@ -7,43 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30b8a523-55fc-4025-9240-4b362ac9803a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/updata.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/gettixing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/updatatixing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/honeySwitch.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/rcswitcher.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/remind.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/shiguchulichoose.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/shiguchulishenqing.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/honeySwitch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/rcswitcher.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/remind.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/shenqing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/shenqingchoose.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/remind.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shenqing.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shenqingchoose.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/insert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/selectdata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/selectdata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/accident.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/accident.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/getusercar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/getusercar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addbaoxian.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addbaoxian.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addcar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addcar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/buybaoxian.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/buybaoxian.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/addbaoxian.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/addbaoxian.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/buybaoxian.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/buybaoxian.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/carinfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/carinfo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/addcars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/addcars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/carinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/carinfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/cars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/cars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/shouye.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/shouye.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/shouye.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/shouye.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/shenqingchoose.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/shenqingchoose.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/entity/selectdata.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/entity/selectdata.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/servlet/accident.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/servlet/accident.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/addcar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/addcar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/css/carinfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/css/carinfo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/js/addcars.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/js/addcars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/js/cars.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/js/cars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/js/shouye.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/js/shouye.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/shouye.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/shouye.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/selectdata.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/selectdata.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/servlet/accident.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/accident.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -109,11 +79,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/remind.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-691">
-              <caret line="97" column="47" lean-forward="true" selection-start-line="97" selection-start-column="47" selection-end-line="97" selection-end-column="47" />
+            <state relative-caret-position="123">
+              <caret line="134" column="12" lean-forward="true" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/shouye.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/cars.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="577">
+              <caret line="51" selection-start-line="51" selection-end-line="57" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/shenqingchoose.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="56" column="2" lean-forward="true" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -184,9 +181,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/shiguchulichoose.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/shenqingchoose.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/shenqing.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/shouye.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/shouye.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/shenqingchoose.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/remind.css" />
         <option value="$PROJECT_DIR$/src/main/java/entity/selectdata.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/gettixing.java" />
@@ -197,6 +192,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/47e48e85-bf72-4c52-bdea-8b4251ed4929/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/entity/updata.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/updatatixing.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/shouye.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/shenqingchoose.js" />
       </list>
     </option>
   </component>
@@ -449,7 +446,7 @@
       <workItem from="1556798388457" duration="14977000" />
       <workItem from="1556853245950" duration="17474000" />
       <workItem from="1556889617411" duration="7820000" />
-      <workItem from="1556937256807" duration="23401000" />
+      <workItem from="1556937256807" duration="23929000" />
     </task>
     <task id="LOCAL-00001" summary="maven">
       <created>1556435680659</created>
@@ -577,11 +574,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556947067839</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="maven">
+      <created>1556962314016</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1556962314016</updated>
+    </task>
+    <task id="LOCAL-00020" summary="maven">
+      <created>1556962471645</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1556962471645</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98175000" />
+    <option name="totallyTimeSpent" value="98703000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -877,13 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/cars.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlet/getusercar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -929,16 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/shouye.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="46" column="26" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="26" />
-          <folding>
-            <element signature="e#1696#1702#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/shiguchulishenqing.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
@@ -970,13 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="547">
           <caret line="127" column="20" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/shenqingchoose.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1122,8 +1109,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/remind.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-691">
-          <caret line="97" column="47" lean-forward="true" selection-start-line="97" selection-start-column="47" selection-end-line="97" selection-end-column="47" />
+        <state relative-caret-position="123">
+          <caret line="134" column="12" lean-forward="true" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/shouye.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/cars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="51" selection-start-line="51" selection-end-line="57" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/shenqingchoose.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="56" column="2" lean-forward="true" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
         </state>
       </provider>
     </entry>
