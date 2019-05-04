@@ -1,6 +1,6 @@
 var servicename=GetQueryString("servicename");
 window.onload=function () {
-    $("tianjia").click(function () {
+    $("#tianjia").click(function () {
         location.href = "addcar.html";
     });
     $.get(
