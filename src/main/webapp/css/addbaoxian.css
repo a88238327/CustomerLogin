@@ -1,0 +1,258 @@
+.box {
+    width: 100%;
+}
+
+.choose_carnum {
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+    margin: 10px auto;
+
+}
+
+.tip_no_info {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.choose_carnum_p {
+    font-weight: bold;
+    font-size: 1.4em;
+
+}
+
+.box .box_header {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.box .box_header img {
+    width: 100%;
+    height: 120px;
+    background-color: dodgerblue;
+    display: block;
+}
+
+.box .box_header .header_info {
+    width: 88%;
+    height: 90px;
+    background-color: white;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    top: 100px;
+    margin-left: 6%;
+    box-shadow: 0 0 10px gray;
+
+}
+
+.box .box_header .header_info .header_info_carnum {
+    border-bottom: 2px ghostwhite solid;
+    font-size: 2em;
+    position: relative;
+    padding-left: 10px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.box .box_header .header_info .header_info_carnum #info_carnum {
+
+}
+
+.box .box_header .header_info .header_info_carnum .right_span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.2em;
+    line-height: 50px;
+    opacity: 0.8;
+}
+
+.box .box_header .header_info .header_info_type {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.box .box_header .header_info .header_info_type #car_type {
+}
+
+.box .box_body {
+    width: 100%;
+
+    height: 200px;
+    margin-top: 70px;
+}
+
+.box .box_body .baoxian_info {
+    width: 100%;
+}
+
+.box .box_body .baoxian_info .baoxian_info_head {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    line-height: 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 10px;
+
+}
+
+.box .box_body .baoxian_info .baoxian_info_content {
+    width: 100%;
+}
+
+.box .box_body .baoxian_info .baoxian_info_content ul {
+    width: 100%;
+}
+
+.box .box_body .baoxian_info .baoxian_info_content ul li {
+    width: 100%;
+    font-size: 1.3em;
+    padding-left: 15px;
+    padding-right: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.box .box_body .baoxian_info .baoxian_info_content ul li p {
+    float: left;
+
+}
+
+.box .box_body .baoxian_info .baoxian_info_content ul li .bujimianpei {
+    background-color: #95fffc;
+    color: dodgerblue;
+    border-radius: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    height: 18px;
+    font-size: 0.8rem;
+    line-height: 18px;
+    margin-top: 6px;
+    margin-left: 5px;
+    display: none;
+}
+
+.box .box_body .baoxian_info .baoxian_info_content ul li span {
+    float: right;
+    color: red;
+    font-weight: bold;
+}
+
+.box .box_body .baoxian_info #updata_baoxian_info {
+    width: 80%;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 1.4em;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+
+}
+
+.box .box_body .baoxian_info #buy_baoxian {
+
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    color: dodgerblue;
+    display: block;
+    font-size: 1.3em;
+
+}
+
+select {
+    /*统一边框*/
+    border: 0;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.2rem;
+    /*将默认的select选择框样式清除*/
+    appearance: none;
+    /*这个样式就是清楚他的下拉按钮的默认样式 */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /*替换选择框的最右侧显示小箭头图片*/
+    background: url("http://****.png") no-repeat scroll right center transparent;
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-right: 14px;
+    text-align: center;
+    float: right;
+    font-weight: bolder;
+    color: red;
+}
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand {
+    display: none;
+}
+.img_box{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.img_box_left{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.img_box_right{
+    width: 50%;
+    float: right;
+    overflow: hidden;
+    position: relative;
+}
+.upimg{
+    float: left;
+    width: 50%;
+    display: block;
+    border: 1px #1e90ff solid;
+    border-radius: 5px;
+    margin-left: 25%;
+    position: relative;
+    height: 100px;
+}
+input{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    height: 30px;
+    line-height: 30px;
+    width: 50%;
+    bottom: 0;
+}
+.img_imput{
+    width: 50%;
+    float: left;
+    height: 100px;
+    display: block;
+    margin-left: 25%;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+}
+.img_box p{
+    font-size: 1.3em;
+    color: dodgerblue;
+    position: absolute;
+    height: 30px;
+    display: block;
+    margin-left: 26%;
+    margin-top: 30px;
+}

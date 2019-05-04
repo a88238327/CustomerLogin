@@ -67,4 +67,29 @@ public class insert {
 		}
     }
 
+    public static void addbaoxianinfo(String insurance, String Excluding_deductible, String carnum, String phone, String startdata, String enddata, String type, String img_name) {
+		Connection conn=null;
+		PreparedStatement pstmt	= null ;
+		SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");//设置日期格式
+		String createtime=df.format(new Date());
+		String driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";//驱动类
+		String username=new DataUser().getUsername();//数据库用户名
+		String DBpassword=new DataUser().getPassword();//数据库密码
+		String sql="insert into insurance (createtime,insurance,Excluding_deductible,号牌号码,phone,startdata,enddata,type,img_name) values('"+createtime+"','"+insurance+"','"+Excluding_deductible+"','"+carnum+"','"+phone+"','"+startdata+"','"+enddata+"','"+type+"','"+img_name+"')";//查询语句
+		System.out.println(sql);
+		String DBurl=new DataUrl().getUrl();//连接数据库的地址
+		try{
+		    Class.forName(driver);//加载驱动器类
+		    conn=DriverManager.getConnection(DBurl,username,DBpassword);//建立连接
+		    //建立处理的SQL语句
+		    pstmt = conn.prepareStatement(sql) ;
+		    System.out.println(pstmt.toString());
+		    int resultString=pstmt.executeUpdate();
+		    pstmt.close();//关闭SQL语句集
+		    conn.close();//关闭连接
+		    System.out.println("添加信息成功");
+		}catch (Exception e) {
+		    System.out.println(e);
+		}
+    }
 }
