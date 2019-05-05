@@ -39,6 +39,7 @@ a{
 	
 }
 input,textarea {
+	-webkit-user-select:text !important;
 	outline: none;
 	border: none;
 	resize: none;

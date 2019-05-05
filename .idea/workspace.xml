@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="CustomerLogin:war" />
+      <artifact name="CustomerLogin:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30b8a523-55fc-4025-9240-4b362ac9803a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/updata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/updata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/accident.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/accident.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addbaoxian.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addbaoxian.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/addbaoxian.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/addbaoxian.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bass.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bass.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/remind.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/remind.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/shenqing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/shenqing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/shenqingchoose.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/shenqingchoose.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/remind.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/remind.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/servlet/accident.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/servlet/accident.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/shouye.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/shouye.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/accident.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/accident.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,6 +58,13 @@
         <item name="localhost" type="feb32156:DbDataSourceImpl" />
         <item name="chejiacloud: database" type="ccb7ac2a:MsImplModel$Database" />
         <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
+        <item name="cars: table" type="63ab2ba1:MsImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="chejiacloud: database" type="ccb7ac2a:MsImplModel$Database" />
+        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
         <item name="remind: table" type="63ab2ba1:MsImplModel$Table" />
       </path>
     </expand>
@@ -78,10 +76,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/addbaoxian.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="138" column="22" lean-forward="true" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/addbaoxian.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
-              <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+              <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#header#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#body#0;n#!!top" />
@@ -95,20 +102,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/addbaoxian.css">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/47e48e85-bf72-4c52-bdea-8b4251ed4929/console_2.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2178">
-              <caret line="99" column="17" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
+            <state relative-caret-position="308">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bass.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+            <state relative-caret-position="374">
+              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="42" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -122,24 +129,6 @@
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" />
                 <element signature="n#footer#0;n#body#0;n#!!top" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/remind.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3586">
-              <caret line="163" column="6" selection-start-line="163" selection-start-column="6" selection-end-line="163" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/buybaoxian.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -171,7 +160,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/entity/updata.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
+            <state relative-caret-position="528">
               <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -212,6 +201,7 @@
       <find>}</find>
       <find>&quot;保额&quot;</find>
       <find>kaiguan</find>
+      <find>ul</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -221,7 +211,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/servlet/getcarbaoxianinfo.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/47e48e85-bf72-4c52-bdea-8b4251ed4929/console_2.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/carinfo.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/picker-extend.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/pickerView.css" />
@@ -235,7 +224,6 @@
         <option value="$PROJECT_DIR$/src/main/java/servlet/addbaoxianinfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/baoxianyuyue.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/cars.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/addbaoxian.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/buybaoxian.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/carinfo.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/buybaoxian.css" />
@@ -269,8 +257,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/remind.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/shenqing.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/remind.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/addbaoxian.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/bass.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/addbaoxian.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/addbaoxian.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/47e48e85-bf72-4c52-bdea-8b4251ed4929/console_2.sql" />
       </list>
     </option>
   </component>
@@ -305,7 +295,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="729" />
+    <option name="x" value="739" />
     <option name="width" value="1181" />
     <option name="height" value="1039" />
   </component>
@@ -318,6 +308,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -361,21 +352,12 @@
             <path>
               <item name="CustomerLogin" type="b2602c69:ProjectViewProjectNode" />
               <item name="CustomerLogin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomerLogin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomerLogin" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -386,7 +368,7 @@
     <property name="ToolWindowJava Enterprise.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -517,7 +499,8 @@
       <workItem from="1556853245950" duration="17474000" />
       <workItem from="1556889617411" duration="7820000" />
       <workItem from="1556937256807" duration="30909000" />
-      <workItem from="1556972295584" duration="397000" />
+      <workItem from="1556972295584" duration="973000" />
+      <workItem from="1557017687539" duration="2024000" />
     </task>
     <task id="LOCAL-00001" summary="maven">
       <created>1556435680659</created>
@@ -673,11 +656,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556963046932</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="maven">
+      <created>1556972700532</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1556972700532</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106080000" />
+    <option name="totallyTimeSpent" value="108680000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -689,10 +679,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="729" y="0" width="1181" height="1039" extended-state="0" />
+    <frame x="739" y="0" width="1181" height="1039" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49554566" visible="true" weight="0.239188" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49554566" visible="true" weight="0.24360105" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -714,7 +704,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" show_stripe_button="false" weight="0.3289941" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" weight="0.3289941" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32850778" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.24721603" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="14" visible="true" weight="0.24721603" />
       <window_info anchor="bottom" id="Application Servers" order="15" sideWeight="0.49775785" weight="0.4621381" />
       <window_info anchor="bottom" id="SQL Generator" order="16" weight="0.32962137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -724,7 +714,7 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="JSF" order="6" weight="0.32894737" />
-      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.081200354" />
+      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.22594881" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="CDI" order="10" />
@@ -781,41 +771,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/getcarbaoxianinfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/gerenzhongxin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-384">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/checkuser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-362">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/baoxianyuyue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="29" column="9" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/bangdingweixinservlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-682">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlet/bangdingweixin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-750">
@@ -907,13 +862,6 @@
           <column-attributes>
             <column name="%%physloc%%" enabled="false" position="-1" />
           </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/47e48e85-bf72-4c52-bdea-8b4251ed4929/console_5.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1128,40 +1076,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/addbaoxian.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#header#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#footer#0;n#body#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/addbaoxian.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2178">
-          <caret line="99" column="17" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/remind.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#footer#0;n#body#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/remind.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3586">
@@ -1198,7 +1112,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/updata.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
+        <state relative-caret-position="528">
           <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1216,10 +1130,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/services.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="70" column="1" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bass.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        <state relative-caret-position="374">
+          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="42" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/remind.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/addbaoxian.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="138" column="22" lean-forward="true" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/addbaoxian.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#header#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/47e48e85-bf72-4c52-bdea-8b4251ed4929/console_3.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/47e48e85-bf72-4c52-bdea-8b4251ed4929/console_4.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/47e48e85-bf72-4c52-bdea-8b4251ed4929/console_5.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/47e48e85-bf72-4c52-bdea-8b4251ed4929/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-317" />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/47e48e85-bf72-4c52-bdea-8b4251ed4929/console_2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
