@@ -26,8 +26,8 @@ window.onload=function () {
             else{
                 var obj=JSON.parse(result);
                 var sharenumber=document.getElementById("sharenumber");
-                sharenumber.innerHTML=result.count;
-                phone=result.phone;
+                sharenumber.innerHTML=obj.count;
+                phone=obj.phone;
                 $("#bangdingweixin").attr("href","http://cloud2.hnjtbf.com/CustomerLogin/bangdingweixin?phone="+phone);
             }
         }

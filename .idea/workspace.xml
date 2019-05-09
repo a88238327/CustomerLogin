@@ -9,17 +9,10 @@
     <list default="true" id="30b8a523-55fc-4025-9240-4b362ac9803a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/bangdingweixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/bangdingweixin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/entity/GetTicket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/entity/GetTicket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/entity/Read_File.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/entity/Read_File.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/entity/getToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/entity/getToken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/css/store.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/css/store.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/js/dingdan.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/js/dingdan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/js/shouye.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/js/shouye.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/shouye.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/shouye.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/store.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/GetTicket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/GetTicket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Read_File.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Read_File.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/getToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/getToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/gerenzhongxin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/gerenzhongxin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/servlet/bangdingweixin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/servlet/bangdingweixin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/gerenzhongxin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/gerenzhongxin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/bangdingweixin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/bangdingweixin.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,8 +60,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/gerenzhongxin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="26" column="57" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="57" />
+            <state relative-caret-position="528">
+              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/gerenzhongxin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlet/gerenzhongxin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/selectdata.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="681" column="42" selection-start-line="681" selection-start-column="37" selection-end-line="681" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -76,8 +96,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlet/bangdingweixin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+            <state relative-caret-position="304">
+              <caret line="49" column="63" lean-forward="true" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -119,9 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/addcar.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/cars.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/shiguchuli.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/shiguchulichoose.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/shiguchulishenqing.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/shiguchulishenqing.html" />
@@ -149,7 +166,6 @@
         <option value="$PROJECT_DIR$/src/main/java/entity/file.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/DataUrl.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/DB_Info.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/selectdata.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/47e48e85-bf72-4c52-bdea-8b4251ed4929/console_7.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/store.js" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/47e48e85-bf72-4c52-bdea-8b4251ed4929/console_2.sql" />
@@ -169,6 +185,10 @@
         <option value="$PROJECT_DIR$/src/main/java/entity/Read_File.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/bangdingweixinservlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/dingdan.js" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/selectdata.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/gerenzhongxin.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/gerenzhongxin.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/gerenzhongxin.js" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/bangdingweixin.java" />
       </list>
     </option>
@@ -203,9 +223,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="29" />
-    <option name="y" value="91" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="89" />
+    <option name="y" value="34" />
     <option name="width" value="950" />
     <option name="height" value="810" />
   </component>
@@ -247,8 +267,7 @@
               <item name="CustomerLogin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerLogin" type="b2602c69:ProjectViewProjectNode" />
@@ -256,6 +275,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerLogin" type="b2602c69:ProjectViewProjectNode" />
@@ -418,7 +438,7 @@
       <workItem from="1557276048128" duration="17517000" />
       <workItem from="1557363429873" duration="4274000" />
       <workItem from="1557370607277" duration="258000" />
-      <workItem from="1557371201601" duration="302000" />
+      <workItem from="1557371201601" duration="4279000" />
     </task>
     <task id="LOCAL-00001" summary="maven">
       <created>1556435680659</created>
@@ -595,11 +615,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557370789563</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="maven">
+      <created>1557371508417</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1557371508417</updated>
+    </task>
+    <task id="LOCAL-00027" summary="maven">
+      <created>1557383031754</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1557383031754</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165581000" />
+    <option name="totallyTimeSpent" value="169558000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -614,7 +648,7 @@
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49554566" visible="true" weight="0.1741453" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49554566" visible="true" weight="0.15544872" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -703,24 +737,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/shenqingchoose.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding>
-            <element signature="n#footer#0;n#body#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/map.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sellermap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1090" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bass.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -852,13 +868,6 @@
           <column-attributes>
             <column name="%%physloc%%" enabled="false" position="-1" />
           </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/selectdata.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="1115" column="31" lean-forward="true" selection-start-line="1115" selection-start-column="31" selection-end-line="1115" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1079,17 +1088,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/updateUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/selectdata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="681" column="42" selection-start-line="681" selection-start-column="37" selection-end-line="681" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/gerenzhongxin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="26" column="57" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="57" />
+        <state relative-caret-position="528">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/gerenzhongxin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/gerenzhongxin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlet/bangdingweixin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        <state relative-caret-position="304">
+          <caret line="49" column="63" lean-forward="true" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
         </state>
       </provider>
     </entry>

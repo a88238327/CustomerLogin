@@ -54,7 +54,7 @@ public class bangdingweixin extends HttpServlet {
 			{
 				System.out.println("绑定openid成功");
 				EventLog.create("UpdataOpenid", phone, "");
-				response.getWriter().write("<meta charset=\"UTF-8\"><script>alert(\"绑定成功\");location.href=\"gerenzhongxin.html\";</script>");
+				response.getWriter().write("<meta charset=\"UTF-8\"><script>alert(\"绑定成功\");location.href='https://cloud.hnjtbf.com/CustomerLogin/gerenzhongxin.html';</script>");
 			}
 			else {
 				EventLog.create("UpdataOpenid", phone, "failure");
