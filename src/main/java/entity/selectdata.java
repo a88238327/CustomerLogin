@@ -6,10 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 import jdk.nashorn.internal.runtime.linker.LinkerCallSite;
 import net.sf.json.JSONArray;
@@ -990,15 +987,97 @@ public class selectdata {
 				map.put("lat", rs.getString("lat"));
 				map.put("lng", rs.getString("lng"));
 			}
-			rs.close();
-			pstmt.close();//关闭SQL语句集
-			conn.close();//关闭连接
+
 			if(map.isEmpty())
 			{
 				return "";
 			}
-			
+			//获取text
+				//获取总数
+			HashMap<String,String> map2= new HashMap<>();
+			String total=selectdata.getevaluationtotal(sellerID);
+			map2.put("total",total);
+			if (total.equals("0"))
+			{
+				JSONObject jsonObject=JSONObject.fromObject(map2);
+				map.put("text",jsonObject.toString());
+			}
+			else {
+				//获取最新的一条文字评价
+				sql="select top 1 customer.touxiangpath,nickname,evaluation from evaluation,userorder,customer where evaluation.orderID=userorder.orderID and userorder.userphone=customer.USER_FORM_INFO_FLAG_MOBILE and evaluation is not null and evaluation!='' and evaluation.orderID in (select orderID from userorder,sellers where sellerphone=phone and sellerID='"+sellerID+"') order by evaluation.createtime desc";//查询语句
+				System.out.println(sql);
+				pstmt = conn.prepareStatement(sql) ;
+				System.out.println(pstmt.toString());
+				ResultSet rs1=pstmt.executeQuery();
+				rs1.next();
+				map2.put("content",rs1.getString("evaluation"));
+				if (rs1.getString("nickname")==null)
+				{
+					map2.put("name","匿名");
+
+				}
+				else {
+					map2.put("name",rs1.getString("nickname"));
+				}
+				if (rs1.getString("touxiangpath")==null)
+				{
+					map2.put("touxiang","https://cloud.hnjtbf.com/img/chejia.png");
+
+				}
+				else {
+					map2.put("name",rs1.getString("touxiangpath"));
+				}
+				rs1.close();
+				JSONObject jsonObject=JSONObject.fromObject(map2);
+				map.put("text",jsonObject.toString());
+				//获取img
+				ArrayList<HashMap<String,String>> list=new ArrayList<>();
+				sql="select sum(Total_photos) as total from evaluation where orderID in (select orderID from userorder,sellers where sellerphone=phone and sellerID='"+sellerID+"')";//查询语句
+				System.out.println(sql);
+				pstmt = conn.prepareStatement(sql) ;
+				System.out.println(pstmt.toString());
+				ResultSet rs2=pstmt.executeQuery();
+				HashMap<String,String> map3=new HashMap<>();
+				if (rs2.next())
+				{
+					//取出总的照片数
+					map3.put("total",rs2.getString("total"));
+					if (!rs2.getString("total").equals("0"))
+					{
+						ArrayList<HashMap<String,String>> list1=new ArrayList<>();
+						sql="select top 4 name from evaluation,evaluation_imgs where evaluation_imgs.orderID=evaluation.orderID and evaluation.orderID in (select orderID from userorder,sellers where sellerphone=phone and sellerID='"+sellerID+"') order by evaluation_imgs.createtime desc";//查询语句
+						System.out.println(sql);
+						pstmt = conn.prepareStatement(sql) ;
+						System.out.println(pstmt.toString());
+						ResultSet rs3=pstmt.executeQuery();
+
+						while (rs3.next())
+						{
+							HashMap<String,String> map4=new HashMap<>();
+							map4.put("img","https://cloud.hnjtbf.com/img/evaluation/"+rs3.getString("name"));
+							list1.add(map4);
+						}
+						JSONArray jsonArray=JSONArray.fromObject(list1);
+						map3.put("imgs",jsonArray.toString());
+						rs3.close();
+					}
+					JSONObject jsonObject1=JSONObject.fromObject(map3);
+					map.put("img",jsonObject1.toString());
+					rs2.close();
+
+				}
+
+			}
+
+
+
+
 			JSONObject jsonObject=JSONObject.fromObject(map);
+			rs.close();
+
+
+			pstmt.close();//关闭SQL语句集
+			conn.close();//关闭连接
 			return jsonObject.toString();
 			
 		}catch (Exception e) {
@@ -1008,8 +1087,44 @@ public class selectdata {
 		return null;
 	}
 
+	private static String getevaluationtotal(String sellerID) {
+		Connection conn=null;
+		Statement stmt=null;
+		PreparedStatement pstmt	= null ;
+		String driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";//驱动类
+		String username=new DataUser().getUsername();//数据库用户名
+		String DBpassword=new DataUser().getPassword();//数据库密码
+		String sql="select count(orderID) as count from evaluation where orderID in (select orderID from userorder,sellers where sellerphone=phone and sellerID='"+sellerID+"')";//查询语句
+		System.out.println(sql);
+		HashMap<String , String > map=new HashMap<String, String>();
+		String DBurl=new DataUrl().getUrl();//连接数据库的地址
+		try{
+			Class.forName(driver);//加载驱动器类
+			conn=DriverManager.getConnection(DBurl,username,DBpassword);//建立连接
+			//建立处理的SQL语句
+			pstmt = conn.prepareStatement(sql) ;
+			System.out.println(pstmt.toString());
+			ResultSet rs=pstmt.executeQuery();
+			String total="0";
+			while(rs.next())
+			{
+				total=rs.getString("count");
 
-    public static String getcars(String phone) {
+			}
+			rs.close();
+			pstmt.close();//关闭SQL语句集
+			conn.close();//关闭连接
+			return total;
+
+		}catch (Exception e) {
+			System.out.println(e);
+		}
+
+		return null;
+	}
+
+
+	public static String getcars(String phone) {
 		Connection conn=null;
 		Statement stmt=null;
 		PreparedStatement pstmt	= null ;

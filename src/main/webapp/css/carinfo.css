@@ -1,6 +1,7 @@
 .box{
     width: 100%;
     margin-bottom: 50px;
+    background-color: white;
 }
 .choose_carnum{
     font-size: 1.5em;

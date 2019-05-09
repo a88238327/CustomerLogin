@@ -18,6 +18,7 @@ var banner=function (maximgcount) {
     var pintBox=banner.querySelector('ul:last-child');
     // //所有的点
     var points=pintBox.querySelectorAll('li');
+
     //添加过度
     var addTransition=function () {
         imageBox.style.transition='all 0.2s';
@@ -29,28 +30,46 @@ var banner=function (maximgcount) {
         imageBox.style.webkitTransition='none'//兼容操作
     }
     //设置位移
+    var load=function (index) {
+        if (index>maximgcount-2)
+        {
+            $(".img1").attr("src",$(".img1").attr("data-original"));
+            $(".img"+index).attr("src",$(".img"+index).attr("data-original"));
+        }
+        else if (index<1)
+        {
+            $(".img"+maximgcount-2).attr("src",$(".img"+maximgcount-2).attr("data-original"));
+        }
+        $(".img"+index).attr("src",$(".img"+index).attr("data-original"));
+    };
     var setTranslateX=function (translatex) {
         imageBox.style.transform='translateX('+translatex+'px)';//移轮播图的宽度
         imageBox.style.webkitTransform='translateX('+translatex+'px)';//移轮播图的宽度
+
+
     }
     var index=1;
+    load(index);
     var timer=setInterval(function () {
         index ++;
+        load(index);
         //过度
         addTransition();
         setTranslateX(-index*width);
-    },3000);
+    },4000);
     imageBox.addEventListener('transitionend',function () {
         if(index>=maximgcount-1)
         {
             //瞬间定位到第一张
             index=1;
+            load(index);
             removeTransition();
             setTranslateX(-index*width);
         }
         else if(index<=0){
             //瞬间定位到倒数第二张
             index=maximgcount-2;
+            load(index);
             removeTransition();
             setTranslateX(-index*width);
         }
@@ -78,7 +97,15 @@ var banner=function (maximgcount) {
         distancex=movex-startx;
         var translatex=-index*width+distancex;
         ismove=true;
+        if (translatex<0)
+        {
+            load(index+1);
+        }
+        else {
+            load(index-1);
+        }
         removeTransition();
+
         setTranslateX(translatex);
     })
     //touch结束

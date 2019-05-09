@@ -30,26 +30,26 @@ public class accident extends HttpServlet {
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        request.setCharacterEncoding("utf8");
-//        response.setCharacterEncoding("utf8");
-//        HttpSession session = request.getSession();
-//        String servicename = request.getParameter("servicename");
-//        if (session.getAttribute("phone") != null) {
-//            String phone = session.getAttribute("phone").toString();
-//            //判断商业险是否购买是否在有效期内或者未有投保信息
-//            if (selectdata.commercialEnable(phone)) {
-//                response.sendRedirect("accident.html");
-//            } else {
-//                String eventcontent = servicename;
-//                if (!selectdata.apponintment_exist(phone, eventcontent)) {
-//                    //insert.appointment(phone, eventcontent);
-//                }
-//                //response.getWriter().write("<meta charset=\"UTF-8\"><script>alert(\"用户未满足要求，已为您安排工作人员，稍后联系您！\");location.href=\"shouye.html\";</script>");
-//                request.getRequestDispatcher("tip1.html").forward(request, response);
-//            }
-//        } else {
-//            response.sendRedirect("userlogin");
-//        }
+        request.setCharacterEncoding("utf8");
+        response.setCharacterEncoding("utf8");
+        HttpSession session = request.getSession();
+        String servicename = request.getParameter("servicename");
+        if (session.getAttribute("phone") != null) {
+            String phone = session.getAttribute("phone").toString();
+            //判断商业险是否购买是否在有效期内或者未有投保信息
+            if (selectdata.commercialEnable(phone)) {
+                response.sendRedirect("accident.html");
+            } else {
+                String eventcontent = servicename;
+                if (!selectdata.apponintment_exist(phone, eventcontent)) {
+                    //insert.appointment(phone, eventcontent);
+                }
+                //response.getWriter().write("<meta charset=\"UTF-8\"><script>alert(\"用户未满足要求，已为您安排工作人员，稍后联系您！\");location.href=\"shouye.html\";</script>");
+                request.getRequestDispatcher("tip1.html").forward(request, response);
+            }
+        } else {
+            response.sendRedirect("userlogin");
+        }
     }
 
     /**

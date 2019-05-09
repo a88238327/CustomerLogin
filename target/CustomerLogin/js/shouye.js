@@ -3,31 +3,59 @@ function createCarousel(array) {
     for(var i=0;i<array.length;i++)
     {
         if(i==0){
-            createlia(array[array.length-1]);
-            createlia(array[i]);
+            createlia(array[array.length-1],array.length);
+            createlia(array[i],i+1);
         }else if(i==array.length-1)
         {
-            createlia(array[i]);
-            createlia(array[0]);
+            createlia(array[i],i+1);
+            createlia(array[0],'1');
         }
         else {
-            createlia(array[i]);
+            createlia(array[i],i+1);
         }
     }
+    // $(function() {
+    //     $("img.lazy").lazyload({
+    //         effect : "fadeIn",
+    //         container: $("#Carousel"),
+    //         threshold : 0,
+    //         skip_invisible : false
+    //     });
+    // });
     for(var i=0;i<array.length-1;i++){
         var ul=document.getElementById("dian");
         var li=document.createElement("li");
         ul.appendChild(li);
     }
-    function createlia(i) {
-        var li=document.createElement("li");
-        var a=document.createElement("a");
-        var img=document.createElement("img");
-        a.setAttribute("href",i.href);
-        img.setAttribute("src",i.src);
-        a.appendChild(img);
-        li.appendChild(a);
-        ul.appendChild(li);
+    function createlia(i,index) {
+        if (i==1)
+        {
+            var li=document.createElement("li");
+            var a=document.createElement("a");
+            var img=document.createElement("img");
+            a.setAttribute("href",i.href);
+            //img.setAttribute("src",i.src);
+            img.setAttribute("src",i.src);
+            img.setAttribute("data-original",i.src);
+            img.setAttribute("class","img"+index);
+            a.appendChild(img);
+            li.appendChild(a);
+            ul.appendChild(li);
+        }
+        else {
+            var li=document.createElement("li");
+            var a=document.createElement("a");
+            var img=document.createElement("img");
+            a.setAttribute("href",i.href);
+            //img.setAttribute("src",i.src);
+            img.setAttribute("src",i.src);
+            img.setAttribute("data-original",i.src);
+            img.setAttribute("class","img"+index);
+            a.appendChild(img);
+            li.appendChild(a);
+            ul.appendChild(li);
+        }
+
     }
 
 }

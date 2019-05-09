@@ -28,27 +28,26 @@ public class getsellerinfo extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("utf8");
-		response.setCharacterEncoding("utf8");
-		String sellerID=request.getParameter("sellerID");
-		if(sellerID==null)
-		{
-			response.getWriter().write("");
-			
-		}
-		else {
-			String jsonString=selectdata.getsellerinfo_forstore(sellerID);
-			System.out.println(jsonString);
-			response.getWriter().write(jsonString);
-		}
+
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		request.setCharacterEncoding("utf8");
+		response.setCharacterEncoding("utf8");
+		String sellerID=request.getParameter("sellerID");
+		if(sellerID==null)
+		{
+			response.getWriter().write("");
+
+		}
+		else {
+			String jsonString=selectdata.getsellerinfo_forstore(sellerID);
+			System.out.println(jsonString);
+			response.getWriter().write(jsonString);
+		}
 	}
 
 }

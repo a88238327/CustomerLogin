@@ -3,7 +3,10 @@ var lat;
 var lng;
 var storename;
 var storeaddress;
-$.get(
+var flag_textbox=false;
+var flag_imgbox=false;
+
+$.post(
     "getsellerinfo",
     {
         sellerID: sellerID
@@ -28,6 +31,8 @@ $.get(
         phone.href = "tel:" + obj.phone;
         address.innerHTML = obj.address;
         storeaddress = obj.address;
+        createbox_info_evaluate(obj);
+
 
     }
 );
@@ -64,7 +69,6 @@ function createCarousel(array) {
 }
 
 window.onload = function () {
-    // layer.msg('的确很重要', {icon: 1});
     var address_href = document.getElementById("address_href");
     address_href.addEventListener("click", function () {
         layer.open({
@@ -83,6 +87,59 @@ window.onload = function () {
         gaode.addEventListener("click", function () {
             location.href="https://uri.amap.com/marker?position="+lng+","+lat+"&name="+storename+"&src=mypage&coordinate=gaode&callnative=0";
         });
-    })
+    });
+
+
+};
+
+
+//加载评价板块
+function createbox_info_evaluate(obj){
+    //加载文字评价
+    console.log(obj);
+    if (obj.text!="0")
+    {
+        var text=JSON.parse(obj.text);
+        $("body").append('<div class="box_info_evaluate"></div>');
+        $(".box_info_evaluate").append(' <div class="box_title"><p>客户评价('+text.total+')</p><span onclick="createtextbox();" class="chakanquanbu">查看全部&nbsp;&nbsp;&gt;</span></div>');
+        $(".box_info_evaluate").append('<div class="box_evalutate"></div>');
+        $(".box_evalutate").append('<img class="user_touxiang" src="'+text.touxiang+'">');
+        $(".box_evalutate").append('<p class="user_nick">'+hidden(text.name)+'</p>');
+        $(".box_evalutate").append('<p class="user_evalutate">'+text.content+'</div>');
+        var img=JSON.parse(obj.img);
+        if (img.total!="0")
+        {
+
+            var imgs=JSON.parse(img.imgs);
+            $(".box_info_evaluate").append('<div class="box_img"> <p class="box_img_title">客户相册('+img.total+')</p> <span onclick="createimgbox();" class="chakanquanbu">查看全部&nbsp;&nbsp;&gt;</span> <div onclick="createimgbox();" class="box_img_imgs"><ul></ul></div></div>');
+            for (var i=0;i<imgs.length;i++)
+            {
+                $(".box_img_imgs ul").append(' <li id="li'+i+'"><img src="'+imgs[i].img+'"></li>');
+                $("#li"+i).css("height",$(".box_img_imgs ul li").css("width"));
+            }
+
+
+
+        }
+    }
+
+
+    //加载图片评价
+}
+function createtextbox()
+{
+    if (!flag_textbox)
+    {
+
+    }else {
+        $(".text_box").css("display","block");
+    }
+}
+function createimgbox(){
 
 }
+function hidden(str) {
+    var xing = '**';
+    return str.substring(0,1)+xing+str.substring(str.length-1);
+}
+
