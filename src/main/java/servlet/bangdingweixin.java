@@ -36,7 +36,7 @@ public class bangdingweixin extends HttpServlet {
 		response.setCharacterEncoding("utf8");
 		if(request.getParameter("code")==null)
 		{
-			response.sendRedirect("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxafe6999b4d77754a&redirect_uri=https://cloud.hnjtbf.com/CustomerLogin/bangdingweixin&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect");
+			response.sendRedirect("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxafe6999b4d77754a&redirect_uri=https://cloud2.hnjtbf.com/CustomerLogin/bangdingweixin&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect");
 		}
 		else {
 			String code=request.getParameter("code");

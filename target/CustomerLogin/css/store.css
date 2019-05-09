@@ -226,6 +226,7 @@
     height: 100%;
     padding-bottom: 40px;
     overflow: auto;
+    display: none;
 }
 .text_box_header{
     width: 100%;

@@ -128,8 +128,8 @@ function getphone() {
             } else {
                 customerphone = result;
             }
-            console.log("https://cloud.hnjtbf.com/service/customerlogin?phone=" + customerphone);
-            location.href = "https://cloud.hnjtbf.com/service/customerlogin?phone=" + customerphone;
+            console.log("http://cloud2.hnjtbf.com/service/customerlogin?phone=" + customerphone);
+            location.href = "http://cloud2.hnjtbf.com/service/customerlogin?phone=" + customerphone;
 
         }
     );
