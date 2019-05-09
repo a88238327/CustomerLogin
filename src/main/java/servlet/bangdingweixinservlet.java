@@ -60,7 +60,7 @@ public class bangdingweixinservlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 //		String APPID="wx76c29bd26cf0fd12";
-//		String REDIRECT_URI="http://cloud.hnjtbf.com/CustomerLogin/bangdingweixinservlet";
+//		String REDIRECT_URI="http://cloud2.hnjtbf.com/CustomerLogin/bangdingweixinservlet";
 //		//String REDIRECT_URI="http://localhost:8080/CustomerLogin/bangdingweixin.html";
 //		
 //		String SCOPE="snsapi_base";

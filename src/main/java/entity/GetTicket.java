@@ -4,7 +4,7 @@ import Tuil.Util;
 import net.sf.json.JSONObject;
 
 public class GetTicket {
-	private static final String GET_TOKEN_URL="http://cloud.hnjtbf.com/wechat/gettoken";
+	private static final String GET_TOKEN_URL="http://cloud2.hnjtbf.com/wechat/gettoken";
 	private static Jsapi_Ticket jt;
 	private static void getTicket() {
 		String tokenStr = Util.get(GET_TOKEN_URL);

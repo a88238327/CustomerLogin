@@ -56,7 +56,7 @@ window.onload=function(){
                 }
                 else {
                     pingjia.addEventListener("click",function () {
-                        location.href="http://cloud.hnjtbf.com/Sellers/evaluation.html?orderID="+orderID;
+                        location.href="http://cloud2.hnjtbf.com/Sellers/evaluation.html?orderID="+orderID;
                     })
                 }
 

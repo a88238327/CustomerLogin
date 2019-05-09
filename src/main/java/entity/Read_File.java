@@ -38,7 +38,7 @@ public class Read_File {
 			//qr_path=get_qr_img.download(qrurl, img_path.path+phone+"_qr.png");
 			File logoFile = new File(img_path.path+"chejiawang.jpg");
 	        File QrCodeFile = new File(qr_path);
-	        String url = "http://cloud.hnjtbf.com/CustomerLogin/sharesignup.html?share="+phone;
+	        String url = "http://cloud2.hnjtbf.com/CustomerLogin/sharesignup.html?share="+phone;
 	        String note = "";
 			Create_QR_img.create(logoFile, QrCodeFile, url, note);
 			return qr_path;
@@ -96,7 +96,7 @@ public class Read_File {
 			//qr_path=get_qr_img.download(qrurl, img_path.path+phone+"_qr.png");
 			File logoFile = new File(img_path.path+"chejiawang.jpg");
 	        File QrCodeFile = new File(qr_path);
-	        String url = "http://cloud.hnjtbf.com/managerLogin/sellersjoin.html?outter ="+phone;
+	        String url = "http://cloud2.hnjtbf.com/managerLogin/sellersjoin.html?outter ="+phone;
 	        String note = "";
 			Create_QR_img.create(logoFile, QrCodeFile, url, note);
 			return true;
