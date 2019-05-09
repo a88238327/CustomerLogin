@@ -1,6 +1,8 @@
 package servlet;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -9,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import entity.selectdata;
+import net.sf.json.JSONObject;
 
 /**
  * Servlet implementation class gerenzhongxin
@@ -36,7 +39,13 @@ public class gerenzhongxin extends HttpServlet {
 		{
 			String str=selectdata.getsharenumber(session.getAttribute("phone").toString());
 			System.out.println(str);
-			response.getWriter().write(str);
+			String phone=session.getAttribute("phone").toString();
+			HashMap<String,String> map=new HashMap<>();
+			map.put("phone",phone);
+			map.put("count",str);
+			JSONObject jsonObject=JSONObject.fromObject(map);
+
+			response.getWriter().write(jsonObject.toString());
 		}else {
 			response.getWriter().write("phone_error");
 		}

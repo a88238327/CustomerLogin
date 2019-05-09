@@ -670,7 +670,6 @@ public class selectdata {
 		String sql="select count(openid) as count from customer where share='"+phone+"' and openid is not null";//查询语句
 		System.out.println(sql);
 		String DBurl=new DataUrl().getUrl();//连接数据库的地址
-		HashMap<String , String > map=new HashMap<String, String>();
 		try{
 			Class.forName(driver);//加载驱动器类
 			conn=DriverManager.getConnection(DBurl,username,DBpassword);//建立连接
@@ -685,9 +684,7 @@ public class selectdata {
 			rs.close();
 			pstmt.close();//关闭SQL语句集
 			conn.close();//关闭连接
-			JSONObject jsonObject=JSONObject.fromObject(map);
-			return jsonObject.toString();
-			
+
 		}catch (Exception e) {
 			System.out.println(e);
 		}

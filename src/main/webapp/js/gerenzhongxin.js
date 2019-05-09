@@ -1,3 +1,4 @@
+var phone="";
 window.onload=function () {
     var box_left=document.getElementById("box_left");
     var box_right=document.getElementById("box_right");
@@ -23,8 +24,11 @@ window.onload=function () {
                 location.href="userlogin";
             }
             else{
+                var obj=JSON.parse(result);
                 var sharenumber=document.getElementById("sharenumber");
-                sharenumber.innerHTML=result;
+                sharenumber.innerHTML=result.count;
+                phone=result.phone;
+                $("#bangdingweixin").attr("href","http://cloud2.hnjtbf.com/CustomerLogin/bangdingweixin?phone="+phone);
             }
         }
     );

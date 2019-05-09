@@ -34,18 +34,22 @@ public class bangdingweixin extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf8");
 		response.setCharacterEncoding("utf8");
+		String phone =request.getParameter("phone");
 		if(request.getParameter("code")==null)
 		{
-			response.sendRedirect("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxafe6999b4d77754a&redirect_uri=https://cloud2.hnjtbf.com/CustomerLogin/bangdingweixin&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect");
+			System.out.println("请求code");
+			response.sendRedirect("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxafe6999b4d77754a&redirect_uri=http://cloud2.hnjtbf.com/CustomerLogin/bangdingweixin?phone="+phone+"&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect");
 		}
 		else {
+			System.out.println("获取code");
 			String code=request.getParameter("code");
 			System.out.println(code);
 			String result=Util.get("https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxafe6999b4d77754a&secret=85642ddb58fc2fc7b1c52720e298485e&code="+code+"&grant_type=authorization_code ");
 			JSONObject jsonObject=JSONObject.fromObject(result);
+			System.out.println(result);
 			System.out.println(jsonObject.getString("openid"));
 			HttpSession session=request.getSession();
-			String phone=session.getAttribute("phone").toString();
+			System.out.println("获取手机号");
 			if(updateUser.updateOpenid(phone,jsonObject.getString("openid").toString()))
 			{
 				System.out.println("绑定openid成功");
