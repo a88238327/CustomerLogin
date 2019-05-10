@@ -207,7 +207,7 @@ function createtextbox(obj) {
             '                <span>' + obj[i].time + '&nbsp;' + obj[i].servicename + '</span>\n' +
             '            </div>\n' +
             '            <div class="text_content">\n' +
-            '                <p class="evalutate_content">' + obj[i].content + '</p>\n' +
+            '                <p class="evalutate_content">' + content1+ '</p>\n' +
             '            </div>\n' +
             '            <div class="text_img">\n' +
             '                <ul>'+imglist+'</ul></div></li>');
