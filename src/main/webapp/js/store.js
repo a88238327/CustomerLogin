@@ -137,7 +137,30 @@ function showtextbox() {
 }
 
 function addimgshowbox() {
-    $(".text_img ul li img").css("height", $(".text_img ul li img").css("width"));
+    // $("#text_box_ul li .text_img ul li img").each(function (e) {
+    //     var str=$("#text_box_ul li .text_img ul li img")[e];
+    //     console.log(str);
+    //     if ($("#text_box_ul li .text_img ul li img")[e].style.height<$("#text_box_ul li .text_img ul li img")[e].style.width)
+    //     {
+    //         alert("1");
+    //         $("#text_box_ul li .text_img ul li img")[e].style.width="auto";
+    //         $("#text_box_ul li .text_img ul li img")[e].style.height=$("#text_box_ul li .text_img ul li").css("width");
+    //     }
+    //     // $("#"+str).css("height",$("#"+str).css("width"));
+    // });
+    var imgs=document.getElementsByTagName("img");
+    for (var i=0;i<imgs.length;i++)
+    {
+        console.log(imgs[i].offsetWidth);
+        if (imgs[i].height<imgs[i].width)
+        {
+            var width=imgs[i].offsetWidth;
+            imgs[i].style.height=width;
+            imgs[i].style.width="auto"
+        }
+    }
+    // $("#text_box_ul li .text_img ul li img").css("height", $("#text_box_ul li .text_img ul li img").css("width"));
+    // $("#li" + i).css("height", $(".box_img_imgs ul li").offsetWidth);
     $(".text_img ul li img").click(function (e) {
         console.log(e.currentTarget.src);
         layer.open({
@@ -149,7 +172,6 @@ function addimgshowbox() {
             shadeClose: true,
             content: '<img src=" ' + e.currentTarget.src + ' " style="width: 100%;line-height: 100%">'
         });
-        $(".layui-m-layerchild").attr("background-color", "red");
     })
 }
 
