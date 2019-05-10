@@ -222,27 +222,35 @@
     width: 100%;
     position: absolute;
     top: 0;
-    background-color: dodgerblue;
+    background-color: white;
     height: 100%;
     padding-bottom: 40px;
     overflow: auto;
     display: none;
+    z-index: 999;
 }
 .text_box_header{
     width: 100%;
-    position: relative;
+    position: fixed;
     font-size: 1.3em;
     padding-left: 10px;
     height: 40px;
     line-height: 40px;
-    opacity: 0.8;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    z-index: 9999;
+
 }
 #text_box_ul{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 #text_box_ul li{
     width: 100%;
+    margin-top: 10px;
+    display: block;
+    overflow: hidden;
 }
 #text_box_ul li .text_title{
     width: 100%;
@@ -264,19 +272,33 @@
     font-size: 0.8em;
     opacity: 0.6;
 }
-.text_content{
+#text_box_ul li .text_content{
     width: 100%;
     padding-left: 60px;
     padding-right: 20px;
 }
-.text_content p{
+#text_box_ul li .text_content p{
 
 }
-.text_img{
+#text_box_ul li .text_img{
     width: 100%;
 }
-.text_img ul{
+#text_box_ul li .text_img ul{
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+#text_box_ul li .text_img ul li{
+    width: 30%;
+    float: left;
+    margin-right: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+    border-radius: 5px;
 
 }
-.text_img ul li{}
-.text_img ul li img{}
+#text_box_ul li .text_img ul li img{
+    width: 100%;
+    display: block;
+}

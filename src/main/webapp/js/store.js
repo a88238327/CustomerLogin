@@ -192,6 +192,14 @@ function createtextbox(obj) {
         for (var j = 0; j < imgs.length; j++) {
            imglist+='<li><img src="'+imgs[j].img+'"></li>';
         }
+        var content1;
+        if (obj[i].content=="")
+        {
+            content1="此用户没有填写评价";
+        }
+        else {
+            content1=obj[i].content;
+        }
         $("#text_box_ul").append(' <li>\n' +
             '            <div class="text_title">\n' +
             '                <img src="' + obj[i].touxiang + '">\n' +

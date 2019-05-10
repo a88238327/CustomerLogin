@@ -1,10 +1,19 @@
+layer.open({
+    type: 2,
+    shadeClose: false,
+    content: '加载中'
+
+});
+
+
+
 var sellerID = GetQueryString("sellerID");
 var lat;
 var lng;
 var storename;
 var storeaddress;
-var flag_textbox=false;
-var flag_imgbox=false;
+var windowsof = "main";
+var evalutiontext="";
 
 $.post(
     "getsellerinfo",
@@ -27,11 +36,12 @@ $.post(
         var phone = document.getElementById("phone");
         var address = document.getElementById("address");
         name.innerHTML = obj.name;
-        storename=obj.name;
+        storename = obj.name;
         phone.href = "tel:" + obj.phone;
         address.innerHTML = obj.address;
         storeaddress = obj.address;
         createbox_info_evaluate(obj);
+        layer.closeAll();
 
 
     }
@@ -79,67 +89,131 @@ window.onload = function () {
         var tengxun = document.getElementById("tengxun");
         var gaode = document.getElementById("gaode");
         baidu.addEventListener("click", function () {
-            location.href="http://api.map.baidu.com/geocoder?location="+lat+","+lng+"&coord_type=gcj02&output=html&src=webapp.baidu.openAPIdemo";
+            location.href = "http://api.map.baidu.com/geocoder?location=" + lat + "," + lng + "&coord_type=gcj02&output=html&src=webapp.baidu.openAPIdemo";
         });
         tengxun.addEventListener("click", function () {
-            location.href = "https://apis.map.qq.com/uri/v1/marker?marker=coord:"+lat+","+lng+";title:"+storename+";addr:"+storeaddress+"&referer=myapp";
+            location.href = "https://apis.map.qq.com/uri/v1/marker?marker=coord:" + lat + "," + lng + ";title:" + storename + ";addr:" + storeaddress + "&referer=myapp";
         });
         gaode.addEventListener("click", function () {
-            location.href="https://uri.amap.com/marker?position="+lng+","+lat+"&name="+storename+"&src=mypage&coordinate=gaode&callnative=0";
+            location.href = "https://uri.amap.com/marker?position=" + lng + "," + lat + "&name=" + storename + "&src=mypage&coordinate=gaode&callnative=0";
         });
     });
 
 
+
+
 };
 
+function getevalution() {
+    layer.open({
+        type: 2,
+        shadeClose: false,
+        content: '加载中'
+
+    });
+    $.post(
+        "getevalution",
+        {
+            sellerID:sellerID
+        },
+        function (result) {
+            var obj=JSON.parse(result);
+            evalutiontext=obj;
+            createtextbox(evalutiontext);
+            $(".text_box").css("display","block");
+            layer.closeAll();
+
+        }
+    );
+}
+function showtextbox() {
+    if (evalutiontext=="")
+    {
+        getevalution();
+    }
+    else {
+        $(".text_box").css("display","block");
+    }
+}
+
+function addimgshowbox() {
+    $(".text_img ul li img").css("height", $(".text_img ul li img").css("width"));
+    $(".text_img ul li img").click(function (e) {
+        console.log(e.currentTarget.src);
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 0,
+            area: '100px',
+            skin: 'layui-layer-nobg', //没有背景色
+            shadeClose: true,
+            content: '<img src=" ' + e.currentTarget.src + ' " style="width: 100%;line-height: 100%">'
+        });
+        $(".layui-m-layerchild").attr("background-color", "red");
+    })
+}
 
 //加载评价板块
-function createbox_info_evaluate(obj){
+function createbox_info_evaluate(obj) {
     //加载文字评价
     console.log(obj);
-    if (obj.text!="0")
-    {
-        var text=JSON.parse(obj.text);
+    if (obj.text != "0") {
+        var text = JSON.parse(obj.text);
         $("body").append('<div class="box_info_evaluate"></div>');
-        $(".box_info_evaluate").append(' <div class="box_title"><p>客户评价('+text.total+')</p><span onclick="createtextbox();" class="chakanquanbu">查看全部&nbsp;&nbsp;&gt;</span></div>');
+        $(".box_info_evaluate").append(' <div class="box_title"><p>客户评价(' + text.total + ')</p><span onclick="showtextbox();" class="chakanquanbu">查看全部&nbsp;&nbsp;&gt;</span></div>');
         $(".box_info_evaluate").append('<div class="box_evalutate"></div>');
-        $(".box_evalutate").append('<img class="user_touxiang" src="'+text.touxiang+'">');
-        $(".box_evalutate").append('<p class="user_nick">'+hidden(text.name)+'</p>');
-        $(".box_evalutate").append('<p class="user_evalutate">'+text.content+'</div>');
-        var img=JSON.parse(obj.img);
-        if (img.total!="0")
-        {
+        $(".box_evalutate").append('<img class="user_touxiang" src="' + text.touxiang + '">');
+        $(".box_evalutate").append('<p class="user_nick">' + hidden(text.name) + '</p>');
+        $(".box_evalutate").append('<p class="user_evalutate">' + text.content + '</div>');
+        var img = JSON.parse(obj.img);
+        if (img.total != "0") {
 
-            var imgs=JSON.parse(img.imgs);
-            $(".box_info_evaluate").append('<div class="box_img"> <p class="box_img_title">客户相册('+img.total+')</p> <span onclick="createimgbox();" class="chakanquanbu">查看全部&nbsp;&nbsp;&gt;</span> <div onclick="createimgbox();" class="box_img_imgs"><ul></ul></div></div>');
-            for (var i=0;i<imgs.length;i++)
-            {
-                $(".box_img_imgs ul").append(' <li id="li'+i+'"><img src="'+imgs[i].img+'"></li>');
-                $("#li"+i).css("height",$(".box_img_imgs ul li").css("width"));
+            var imgs = JSON.parse(img.imgs);
+            $(".box_info_evaluate").append('<div class="box_img"> <p class="box_img_title">客户相册(' + img.total + ')</p> <span onclick="showtextbox();" class="chakanquanbu">查看全部&nbsp;&nbsp;&gt;</span> <div onclick="showtextbox();" class="box_img_imgs"><ul></ul></div></div>');
+            for (var i = 0; i < imgs.length; i++) {
+                $(".box_img_imgs ul").append(' <li id="li' + i + '"><img src="' + imgs[i].img + '"></li>');
+                $("#li" + i).css("height", $(".box_img_imgs ul li").css("width"));
             }
-
 
 
         }
     }
 
 
+
     //加载图片评价
 }
-function createtextbox()
-{
-    if (!flag_textbox)
-    {
 
-    }else {
-        $(".text_box").css("display","block");
+function createtextbox(obj) {
+
+    for (var i = 0; i < obj.length; i++) {
+        var imglist="";
+        var imgs=obj[i].imgs;
+        for (var j = 0; j < imgs.length; j++) {
+           imglist+='<li><img src="'+imgs[j].img+'"></li>';
+        }
+        $("#text_box_ul").append(' <li>\n' +
+            '            <div class="text_title">\n' +
+            '                <img src="' + obj[i].touxiang + '">\n' +
+            '                <p class="text_title_name">' + hidden(obj[i].name) + '</p>\n' +
+            '                <span>' + obj[i].time + '&nbsp;' + obj[i].servicename + '</span>\n' +
+            '            </div>\n' +
+            '            <div class="text_content">\n' +
+            '                <p class="evalutate_content">' + obj[i].content + '</p>\n' +
+            '            </div>\n' +
+            '            <div class="text_img">\n' +
+            '                <ul>'+imglist+'</ul></div></li>');
     }
+    addimgshowbox();
+    $(".text_box").css("display", "block");
 }
-function createimgbox(){
+
+function createimgbox() {
 
 }
+
 function hidden(str) {
     var xing = '**';
-    return str.substring(0,1)+xing+str.substring(str.length-1);
+    return str.substring(0, 1) + xing + str.substring(str.length - 1);
 }
 
