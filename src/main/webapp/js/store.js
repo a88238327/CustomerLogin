@@ -148,17 +148,17 @@ function addimgshowbox() {
     //     }
     //     // $("#"+str).css("height",$("#"+str).css("width"));
     // });
-    var imgs=document.getElementsByTagName("img");
-    for (var i=0;i<imgs.length;i++)
-    {
-        console.log(imgs[i].offsetWidth);
-        if (imgs[i].height<imgs[i].width)
-        {
-            var width=imgs[i].offsetWidth;
-            imgs[i].style.height=width;
-            imgs[i].style.width="auto"
-        }
-    }
+    // var imgs=document.getElementsByTagName("img");
+    // for (var i=0;i<imgs.length;i++)
+    // {
+    //     console.log(imgs[i].offsetWidth);
+    //     if (imgs[i].height<imgs[i].width)
+    //     {
+    //         var width=imgs[i].offsetWidth;
+    //         imgs[i].style.height=width;
+    //         imgs[i].style.width="auto"
+    //     }
+    // }
     // $("#text_box_ul li .text_img ul li img").css("height", $("#text_box_ul li .text_img ul li img").css("width"));
     // $("#li" + i).css("height", $(".box_img_imgs ul li").offsetWidth);
     $(".text_img ul li img").click(function (e) {

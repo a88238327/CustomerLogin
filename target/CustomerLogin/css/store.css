@@ -288,6 +288,7 @@
     padding-left: 60px;
     padding-right: 10px;
     margin-top: 5px;
+
 }
 #text_box_ul li .text_img ul li{
     width: 30%;
@@ -296,9 +297,15 @@
     overflow: hidden;
     margin-top: 5px;
     border-radius: 5px;
+    padding-bottom: 30%;
+    height: 0;
+    display: inline-block;
+
+
 
 }
 #text_box_ul li .text_img ul li img{
     width: 100%;
     display: block;
+    margin: auto;
 }

@@ -9,6 +9,8 @@
     <list default="true" id="30b8a523-55fc-4025-9240-4b362ac9803a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/css/store.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/css/store.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/js/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/js/store.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/store.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="211" column="52" lean-forward="true" selection-start-line="211" selection-start-column="52" selection-end-line="211" selection-end-column="52" />
+            <state relative-caret-position="275">
+              <caret line="160" column="8" selection-start-line="150" selection-start-column="7" selection-end-line="160" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
                 <element signature="e#95#101#0" expanded="true" />
@@ -105,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/store.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="238" column="28" lean-forward="true" selection-start-line="238" selection-start-column="28" selection-end-line="238" selection-end-column="28" />
+            <state relative-caret-position="195">
+              <caret line="309" column="16" selection-start-line="309" selection-start-column="12" selection-end-line="309" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -169,6 +171,8 @@
       <find>layui-layer-nobg</find>
       <find>css</find>
       <find>.layui-m-layerchild</find>
+      <find>addimgshowbox();</find>
+      <find>addimgshowbox()</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -228,8 +232,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/47e48e85-bf72-4c52-bdea-8b4251ed4929/console_9.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/store.html" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/getevalution.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/store.css" />
         <option value="$PROJECT_DIR$/src/main/java/entity/selectdata.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/store.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/store.js" />
       </list>
     </option>
@@ -264,9 +268,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="166" />
-    <option name="y" value="89" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="814" />
+    <option name="y" value="44" />
     <option name="width" value="920" />
     <option name="height" value="840" />
   </component>
@@ -332,7 +336,7 @@
     <property name="ToolWindowJava Enterprise.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -474,7 +478,7 @@
       <workItem from="1557363429873" duration="4274000" />
       <workItem from="1557370607277" duration="258000" />
       <workItem from="1557371201601" duration="14873000" />
-      <workItem from="1557449042159" duration="16675000" />
+      <workItem from="1557449042159" duration="22930000" />
     </task>
     <task id="LOCAL-00001" summary="maven">
       <created>1556435680659</created>
@@ -686,11 +690,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557475027973</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="maven">
+      <created>1557475205741</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1557475205742</updated>
+    </task>
+    <task id="LOCAL-00032" summary="maven">
+      <created>1557483602136</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1557483602136</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196827000" />
+    <option name="totallyTimeSpent" value="203082000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -702,10 +720,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
+    <frame x="696" y="34" width="920" height="840" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4941427" visible="true" weight="0.21367522" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4941427" visible="true" weight="0.22477064" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -716,7 +733,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49887893" weight="0.24174654" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.399361" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49775785" weight="0.32850778" />
@@ -727,7 +744,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" show_stripe_button="false" weight="0.3289941" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" weight="0.3289941" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32850778" />
-      <window_info anchor="bottom" id="Database Console" order="14" visible="true" weight="0.3887114" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.52217454" />
       <window_info anchor="bottom" id="Application Servers" order="15" sideWeight="0.49775785" weight="0.4621381" />
       <window_info anchor="bottom" id="SQL Generator" order="16" weight="0.32962137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1165,13 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/store.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="238" column="28" lean-forward="true" selection-start-line="238" selection-start-column="28" selection-end-line="238" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/47e48e85-bf72-4c52-bdea-8b4251ed4929/console_9.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1193,10 +1203,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/store.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="309" column="16" selection-start-line="309" selection-start-column="12" selection-end-line="309" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/store.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="211" column="52" lean-forward="true" selection-start-line="211" selection-start-column="52" selection-end-line="211" selection-end-column="52" />
+        <state relative-caret-position="275">
+          <caret line="160" column="8" selection-start-line="150" selection-start-column="7" selection-end-line="160" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
             <element signature="e#95#101#0" expanded="true" />
