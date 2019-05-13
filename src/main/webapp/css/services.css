@@ -89,6 +89,11 @@ p{
     display: block;
     font-size: 1.1em;
     color: #cccccc;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 .content .up h3{
     margin-top: 5px;
@@ -236,6 +241,11 @@ header input{
 #body_list ul li a p[class="address"]{
     color: #cccccc;
     padding-left: 80px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 #body_list ul li a p[class="complete"]{

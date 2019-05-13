@@ -116,6 +116,7 @@ window.onload = function () {
     $("#tixing").click(function () {
         location.href="shenqingchoose.html?servicename=提醒"
     });
+    layer.closeAll();
 };
 
 function getphone() {
