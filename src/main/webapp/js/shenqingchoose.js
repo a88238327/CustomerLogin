@@ -1,4 +1,17 @@
 var servicename=GetQueryString("servicename");
+$("#carnum").html(servicename);
+if(servicename=="事故处理")
+{
+    $(".baoxian_info_head p").html("请点击需要处理事故的车辆（点击号牌）")
+}
+if(servicename=="免费年审")
+{
+    $(".baoxian_info_head p").html("请点击需要办理年审的车辆（点击号牌）")
+}
+if(servicename=="提醒")
+{
+    $(".baoxian_info_head p").html("请点击需要开启提醒的车辆（点击号牌）")
+}
 window.onload=function () {
     $("#tianjia").click(function () {
         location.href = "addcar.html";
