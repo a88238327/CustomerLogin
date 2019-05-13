@@ -57,15 +57,11 @@ public class shouye extends HttpServlet {
 		JSONArray jsonObject1=JSONArray.fromObject(getcarousel());
 		JSONArray jsonObject2=JSONArray.fromObject(getfuli());
 		JSONArray jsonObject3=JSONArray.fromObject(getzengzhi());
-		System.out.println(jsonObject1.toString());
-		System.out.println(jsonObject2.toString());
-		System.out.println(jsonObject3.toString());
 		HashMap<String , List> map=new HashMap<String, List>();
 		map.put("carousel", jsonObject1);
 		map.put("fuli", jsonObject2);
 		map.put("zengzhi", jsonObject3);
 		JSONObject jsonObject4=JSONObject.fromObject(map);
-		System.out.println(jsonObject4.toString());
 		response.getWriter().write(jsonObject4.toString());
 		
 		
@@ -91,11 +87,9 @@ public class shouye extends HttpServlet {
 			conn1=DriverManager.getConnection(url1,UN1,PW1);//建立连接
 			//建立处理的SQL语句
 			pstmt1 = conn1.prepareStatement(sql1) ;
-			System.out.println(sql1);
 			rs1=pstmt1.executeQuery();//查询数据库并生成结果集
 			while (rs1.next()) {
 				fuli f=new fuli(rs1.getString("href"), imgpath+rs1.getString("src"),rs1.getString("title"));
-				System.out.println("ok");
 				list2.add(f);
 			}
 			rs1.close();//关闭结果集
@@ -110,7 +104,6 @@ public class shouye extends HttpServlet {
 		List list1 = new ArrayList<shouyeCarousel>();
 		String imgpath="http://cloud.hnjtbf.com//img//shouye//";
 		Connection conn=null;
-		Statement stmt=null;
 		ResultSet rs= null ;
 		PreparedStatement pstmt	= null ;
 		DB_Info db_Info=new DB_Info();

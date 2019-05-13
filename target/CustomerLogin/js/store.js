@@ -38,7 +38,7 @@ $.post(
         name.innerHTML = obj.name;
         storename = obj.name;
         phone.href = "tel:" + obj.phone;
-        address.innerHTML = obj.address;
+        address.innerHTML = beautySub(obj.address, len);
         storeaddress = obj.address;
         createbox_info_evaluate(obj);
         layer.closeAll();
@@ -178,9 +178,10 @@ function addimgshowbox() {
 //加载评价板块
 function createbox_info_evaluate(obj) {
     //加载文字评价
+    var text = JSON.parse(obj.text);
     console.log(obj);
-    if (obj.text != "0") {
-        var text = JSON.parse(obj.text);
+    if (text.total != "0") {
+        //var text = JSON.parse(obj.text);
         $("body").append('<div class="box_info_evaluate"></div>');
         $(".box_info_evaluate").append(' <div class="box_title"><p>客户评价(' + text.total + ')</p><span onclick="showtextbox();" class="chakanquanbu">查看全部&nbsp;&nbsp;&gt;</span></div>');
         $(".box_info_evaluate").append('<div class="box_evalutate"></div>');
@@ -245,5 +246,12 @@ function createimgbox() {
 function hidden(str) {
     var xing = '**';
     return str.substring(0, 1) + xing + str.substring(str.length - 1);
+}
+function beautySub(str, len) {
+    var reg = /[\u4e00-\u9fa5]/g,    //专业匹配中文
+        slice = str.substring(0, len),
+        chineseCharNum = (~~(slice.match(reg) && slice.match(reg).length)),
+        realen = slice.length * 2 - chineseCharNum;
+    return str.substr(0, realen) + (realen < str.length ? "..." : "");
 }
 

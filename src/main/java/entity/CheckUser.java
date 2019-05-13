@@ -122,17 +122,17 @@ public class CheckUser {
 				rs.close();//关闭结果集
 				pstmt.close();//关闭SQL语句集
 				conn.close();//关闭连接
-				return false;
+				return true;
 			}else {	
 				rs.close();//关闭结果集
 				pstmt.close();//关闭SQL语句集
 				conn.close();//关闭连接
-				return true;
+				return false;
 			}
 			
 		}catch (Exception e) {
 		}
-		return true;
+		return false;
 	}
 	public static String checkuseropenid(String openid) {
 		Connection conn=null;
