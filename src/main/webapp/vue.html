@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Lazy Load Enabled With AJAX Content</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <style type="text/css">
         .container img {
             margin-bottom: 10px;
@@ -24,7 +25,7 @@
 <body>
 <div id="container">
     <div id="inner_container">
-        <img class="lazy" src="img/chejia.png" data-original="img/幻灯片1.png" width="765" height="574" alt="BMW M1 Hood">
+        <img :title="nihao" class="lazy" src="img/chejia.png" data-original="img/幻灯片1.png" width="765" height="574" alt="BMW M1 Hood">
         <img class="lazy" src="img/chejia.png" data-original="img/幻灯片2.png" width="765" height="574" alt="BMW M1 Side">
         <img class="lazy" src="img/chejia.png" data-original="img/幻灯片3.png" width="765" height="574" alt="Viper 1">
         <img class="lazy" src="img/chejia.png" data-original="img/幻灯片4.png" width="765" height="574" alt="Viper Corner">

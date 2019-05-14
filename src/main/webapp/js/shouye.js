@@ -1,3 +1,10 @@
+layer.open({
+    type: 2,
+    shadeClose: false,
+    content: '加载中'
+
+});
+
 function createCarousel(array) {
     var ul=document.getElementById("Carousel");
     for(var i=0;i<array.length;i++)
@@ -105,6 +112,7 @@ window.onload = function () {
             banner(obj.carousel.length + 2);
             createfuli(obj.fuli);
             createzengzhi(obj.zengzhi);
+            layer.closeAll();
         }
     );
     $("#shiguchuli").click(function () {
@@ -116,7 +124,6 @@ window.onload = function () {
     $("#tixing").click(function () {
         location.href="shenqingchoose.html?servicename=提醒"
     });
-    layer.closeAll();
 };
 
 function getphone() {
