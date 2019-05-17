@@ -8,79 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="30b8a523-55fc-4025-9240-4b362ac9803a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/dingdan.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/dingdan.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/services.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/dingdan.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/dingdan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/dingdan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/dingdan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/shouye.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/shouye.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/services.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/shouye.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/shouye.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vue.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vue.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Tuil/Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/CheckUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Create_QR_img.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Create_file.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/DB_Info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/DataUrl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/DataUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/EventLog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/GetTicket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Jsapi_Ticket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Read_File.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Sms.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/ValidDate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/WeiXinUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/ZXingCode$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/ZXingCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/base64tofile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/check.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/createUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/file.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/fuli.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/getToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/img_path.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/ocr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/postSms.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/selectdata.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/shouyeCarousel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/tobyte.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/updateUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/updatecar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/wx_config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/Servlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/accident.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/addcar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/addlicense.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/bangdingweixin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/bangdingweixinservlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/checkuser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/gerenzhongxin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/getcar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/getcarinfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/getdingdan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/getlicense.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/getlicenseinfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/getlist.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/getmarkers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/getphone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/getsellerinfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/loginservlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/salesmansignupservlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/selectopenid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/shareservlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/sharesignup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/shouye.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/smsloginservlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/updatedrivingLicense.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/userlogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/wechatlogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/zhuce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/zhuceservlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/TEst.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/info.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -117,20 +47,6 @@
         <item name="chejiacloud: database" type="ccb7ac2a:MsImplModel$Database" />
         <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="chejiacloud: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="evaluation_imgs: table" type="63ab2ba1:MsImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="chejiacloud: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="userorder: table" type="63ab2ba1:MsImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -138,21 +54,35 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/shouye.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state relative-caret-position="-550">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/shouye.js">
+        <entry file="das://47e48e85-bf72-4c52-bdea-8b4251ed4929/database/chejiacloud/schema/dbo/table/fuli">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true">
+                <filter text="" />
+              </filtering>
+              <column-attributes>
+                <column name="%%physloc%%" enabled="false" position="-1" />
+              </column-attributes>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlet/service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2508">
-              <caret line="114" column="29" lean-forward="true" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
+            <state relative-caret-position="308">
+              <caret line="49" column="67" lean-forward="true" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -203,11 +133,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/css/buybaoxian.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/addbaoxian.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/carinfo.css" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/accident.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/main/java/entity/getToken.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/GetTicket.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Read_File.java" />
@@ -240,20 +168,22 @@
         <option value="$PROJECT_DIR$/src/main/webapp/remind.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/store.html" />
         <option value="$PROJECT_DIR$/src/main/java/entity/CheckUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlet/shouye.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/store.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/addcars.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/addcar.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/vue.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/test.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/services.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/services.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/dingdan.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/dingdan.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/dingdan.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/shouye.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/shouye.html" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/shouye.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/services.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/services.css" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/service.java" />
       </list>
     </option>
   </component>
@@ -287,7 +217,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1039" />
@@ -300,8 +230,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -333,7 +261,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerLogin" type="b2602c69:ProjectViewProjectNode" />
@@ -341,22 +269,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomerLogin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomerLogin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomerLogin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomerLogin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerLogin" type="b2602c69:ProjectViewProjectNode" />
@@ -367,6 +279,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -525,7 +439,9 @@
       <workItem from="1557729495699" duration="55000" />
       <workItem from="1557729588190" duration="1773000" />
       <workItem from="1557794839304" duration="1738000" />
-      <workItem from="1557820143082" duration="4910000" />
+      <workItem from="1557820143082" duration="8011000" />
+      <workItem from="1557882405597" duration="3795000" />
+      <workItem from="1558080210776" duration="71000" />
     </task>
     <task id="LOCAL-00001" summary="maven">
       <created>1556435680659</created>
@@ -793,11 +709,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557729612865</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="maven">
+      <created>1557825158693</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1557825158693</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219810000" />
+    <option name="totallyTimeSpent" value="226777000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -809,10 +732,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1039" extended-state="4" />
+    <frame x="0" y="0" width="1920" height="1039" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4941427" visible="true" weight="0.30921054" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4941427" visible="true" weight="0.09508547" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -843,7 +766,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="JSF" order="5" weight="0.32894737" />
-      <window_info anchor="right" id="Database" order="6" weight="0.43119267" />
+      <window_info anchor="right" id="Database" order="6" weight="0.43092105" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="CDI" order="9" />
@@ -901,51 +824,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/layer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="73" column="12" lean-forward="true" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/layer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="36" selection-start-line="36" selection-end-line="50" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/helll.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="71" column="108" selection-start-line="68" selection-start-column="20" selection-end-line="71" selection-end-column="108" />
-          <folding>
-            <element signature="n#style#0;n#figcaption#0;n#figure#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#figcaption#0;n#figure#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#figcaption#0;n#figure#2;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#figcaption#0;n#figure#3;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#figcaption#0;n#figure#4;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/getevalutionfirst.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/buybaoxian.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://47e48e85-bf72-4c52-bdea-8b4251ed4929/database/chejiacloud/schema/dbo/table/sellers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true">
-            <filter text="" />
-          </filtering>
-          <column-attributes>
-            <column name="%%physloc%%" enabled="false" position="-1" />
-          </column-attributes>
         </state>
       </provider>
     </entry>
@@ -1064,13 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/selectdata.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27610">
-          <caret line="1265" column="24" selection-start-line="1265" selection-start-column="24" selection-end-line="1265" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/accident.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -1149,13 +1024,6 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/47e48e85-bf72-4c52-bdea-8b4251ed4929/console_11.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/shouye.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="161" column="32" lean-forward="true" selection-start-line="161" selection-start-column="32" selection-end-line="161" selection-end-column="32" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/CheckUser.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1260,27 +1128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/services.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/addbaoxian.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/services.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="97" column="19" lean-forward="true" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/dingdan.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="577">
@@ -1323,10 +1170,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/addbaoxian.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1144">
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/shouye.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/services.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="250" column="20" lean-forward="true" selection-start-line="250" selection-start-column="20" selection-end-line="250" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/services.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/service.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/getlist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/selectdata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18282">
+          <caret line="841" column="25" selection-start-line="841" selection-start-column="25" selection-end-line="841" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://47e48e85-bf72-4c52-bdea-8b4251ed4929/database/chejiacloud/schema/dbo/table/sellers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+          <column-attributes>
+            <column name="%%physloc%%" enabled="false" position="-1" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/shouye.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        <state relative-caret-position="-550">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://47e48e85-bf72-4c52-bdea-8b4251ed4929/database/chejiacloud/schema/dbo/table/fuli">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+          <column-attributes>
+            <column name="%%physloc%%" enabled="false" position="-1" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="49" column="67" lean-forward="true" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
         </state>
       </provider>
     </entry>

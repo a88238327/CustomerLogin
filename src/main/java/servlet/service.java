@@ -47,7 +47,7 @@ public class service extends HttpServlet {
 			}
 			else if(servicename.equals("89折加油"))
 			{
-				url="http://www.youxinuk.com/carFamilywx.php?mod=login";
+				url="http://www.youxinuk.com/carFamily.php?mod=me";
 				System.out.println(url);
 				EventLog.create("click", phone, "89折加油");
 				response.sendRedirect(url);
