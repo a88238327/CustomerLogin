@@ -38,7 +38,7 @@ $.post(
         name.innerHTML = obj.name;
         storename = obj.name;
         phone.href = "tel:" + obj.phone;
-        address.innerHTML = beautySub(obj.address, len);
+        address.innerHTML = obj.address;
         storeaddress = obj.address;
         createbox_info_evaluate(obj);
         layer.closeAll();

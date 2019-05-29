@@ -1,3 +1,11 @@
+layer.open({
+    type: 2,
+    shadeClose: false,
+    content: '加载中'
+
+});
+
+
 window.onload=function(){
     $.get(
         "getdingdan",
@@ -13,6 +21,7 @@ window.onload=function(){
             else {
                 var obj=JSON.parse(result);
                 createbox(obj);
+                layer.closeAll();
             }
         }
     );

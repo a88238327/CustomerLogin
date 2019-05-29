@@ -8,9 +8,17 @@
   <component name="ChangeListManager">
     <list default="true" id="30b8a523-55fc-4025-9240-4b362ac9803a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/services.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/servlet/service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/servlet/service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/addcar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/addcar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/css/dingdan.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/css/dingdan.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/css/services.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/css/services.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/dingdan.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/dingdan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/js/addcars.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/js/addcars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/js/dingdan.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/js/dingdan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/js/shouye.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/js/shouye.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/js/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/js/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/shouye.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/shouye.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,11 +63,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/shouye.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-550">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="467">
+              <caret line="63" column="2" selection-start-line="63" selection-start-column="2" selection-end-line="74" selection-end-column="13" />
+              <folding>
+                <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,18 +82,15 @@
               <filtering enabled="true">
                 <filter text="" />
               </filtering>
-              <column-attributes>
-                <column name="%%physloc%%" enabled="false" position="-1" />
-              </column-attributes>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlet/service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="49" column="67" lean-forward="true" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
+            <state relative-caret-position="1584">
+              <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -178,12 +186,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/js/dingdan.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/dingdan.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/shouye.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/shouye.html" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/shouye.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/services.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/services.css" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/service.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/shouye.html" />
       </list>
     </option>
   </component>
@@ -218,9 +226,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="1039" />
+    <option name="x" value="926" />
+    <option name="y" value="48" />
+    <option name="width" value="940" />
+    <option name="height" value="779" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -253,15 +262,7 @@
               <item name="CustomerLogin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CustomerLogin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CustomerLogin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerLogin" type="b2602c69:ProjectViewProjectNode" />
@@ -269,6 +270,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CustomerLogin" type="b2602c69:ProjectViewProjectNode" />
@@ -441,7 +443,11 @@
       <workItem from="1557794839304" duration="1738000" />
       <workItem from="1557820143082" duration="8011000" />
       <workItem from="1557882405597" duration="3795000" />
-      <workItem from="1558080210776" duration="71000" />
+      <workItem from="1558080210776" duration="768000" />
+      <workItem from="1558312701634" duration="599000" />
+      <workItem from="1558573108558" duration="170000" />
+      <workItem from="1558578879941" duration="1179000" />
+      <workItem from="1558922765020" duration="158000" />
     </task>
     <task id="LOCAL-00001" summary="maven">
       <created>1556435680659</created>
@@ -716,11 +722,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557825158693</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="maven">
+      <created>1558080294158</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1558080294158</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226777000" />
+    <option name="totallyTimeSpent" value="229580000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -733,9 +746,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1039" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4941427" visible="true" weight="0.09508547" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4941427" visible="true" weight="0.23717949" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1232,8 +1244,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/shouye.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-550">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="467">
+          <caret line="63" column="2" selection-start-line="63" selection-start-column="2" selection-end-line="74" selection-end-column="13" />
+          <folding>
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1243,16 +1258,13 @@
           <filtering enabled="true">
             <filter text="" />
           </filtering>
-          <column-attributes>
-            <column name="%%physloc%%" enabled="false" position="-1" />
-          </column-attributes>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlet/service.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="49" column="67" lean-forward="true" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
+        <state relative-caret-position="1584">
+          <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
         </state>
       </provider>
     </entry>
