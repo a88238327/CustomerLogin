@@ -242,6 +242,8 @@ window.onload = function () {
                     }
                     cvs.width = this.width * scale;
                     cvs.height = this.height * scale;     //计算等比缩小后图片宽高
+                    var newwidth=cvs.width;
+                    var newheight=cvs.height;
                     var ctx = cvs.getContext('2d');
                     if(cvs.width<cvs.height)
                     {
@@ -251,7 +253,7 @@ window.onload = function () {
                         ctx.rotate(-Math.PI/2);
                         ctx.translate(-cvs.height,0);
                     }
-                    ctx.drawImage(this, 0, 0, cvs.width, cvs.height);
+                    ctx.drawImage(this, 0, 0, newwidth, newheight);
                     var newImageData = cvs.toDataURL(file_type, 0.8);   //重新生成图片，<span style="font-family: Arial, Helvetica, sans-serif;">fileType为用户选择的图片类型</span
                     fuye.src = newImageData;
                     dataurl = newImageData.replace("data:" + file_type + ";base64,", '');
