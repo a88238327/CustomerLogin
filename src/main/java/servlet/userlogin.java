@@ -37,7 +37,11 @@ public class userlogin extends HttpServlet {
         request.setCharacterEncoding("utf8");
         response.setCharacterEncoding("utf8");
         if (request.getParameter("code") == null) {
-            String url=request.getRequestURL().toString()+ "?"+(request.getQueryString()).toString();
+            String url=request.getRequestURL().toString();
+            if (request.getQueryString()!=null)
+            {
+                url=url+ "?"+request.getQueryString();
+            }
             System.out.println(url);
             response.sendRedirect("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxafe6999b4d77754a&redirect_uri="+url+"&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect");
         } else {

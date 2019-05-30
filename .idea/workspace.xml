@@ -9,9 +9,6 @@
     <list default="true" id="30b8a523-55fc-4025-9240-4b362ac9803a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/userlogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/userlogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/servlet/userlogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/servlet/userlogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/shouye.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/shouye.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,11 +52,11 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/shouye.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
+            <state>
               <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
             </state>
           </provider>
@@ -68,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/buybaoxian.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state>
               <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#header#0;n#body#0;n#!!top" expanded="true" />
@@ -83,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlet/userlogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+            <state relative-caret-position="289">
+              <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -92,7 +89,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/entity/selectdata.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
+            <state>
               <caret line="808" column="13" selection-start-line="808" selection-start-column="13" selection-end-line="808" selection-end-column="13" />
             </state>
           </provider>
@@ -101,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/entity/DataUrl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
+            <state>
               <caret line="4" column="31" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="31" />
               <folding>
                 <element signature="e#156#157#0" expanded="true" />
@@ -242,8 +239,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="467" />
+    <option name="y" value="40" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -256,7 +254,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,10 +291,15 @@
               <item name="CustomerLogin" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CustomerLogin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,7 +317,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -470,6 +472,7 @@
       <workItem from="1559092567492" duration="699000" />
       <workItem from="1559114635099" duration="9000" />
       <workItem from="1559114700277" duration="5642000" />
+      <workItem from="1559178821130" duration="358000" />
     </task>
     <task id="LOCAL-00001" summary="maven">
       <created>1556435680659</created>
@@ -762,7 +765,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236386000" />
+    <option name="totallyTimeSpent" value="236744000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -774,9 +777,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="467" y="40" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4941427" visible="true" weight="0.1401919" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4941427" visible="true" weight="0.29102844" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1216,34 +1220,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/DataUrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="31" />
-          <folding>
-            <element signature="e#156#157#0" expanded="true" />
-            <element signature="e#173#174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/selectdata.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="808" column="13" selection-start-line="808" selection-start-column="13" selection-end-line="808" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/shouye.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
+        <state>
           <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/buybaoxian.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state>
           <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#header#0;n#body#0;n#!!top" expanded="true" />
@@ -1254,10 +1240,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/selectdata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="808" column="13" selection-start-line="808" selection-start-column="13" selection-end-line="808" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/DataUrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="31" />
+          <folding>
+            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlet/userlogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
+        <state relative-caret-position="289">
+          <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
         </state>
       </provider>
     </entry>
