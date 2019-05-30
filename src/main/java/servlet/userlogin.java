@@ -37,7 +37,9 @@ public class userlogin extends HttpServlet {
         request.setCharacterEncoding("utf8");
         response.setCharacterEncoding("utf8");
         if (request.getParameter("code") == null) {
-            response.sendRedirect("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxafe6999b4d77754a&redirect_uri=https://cloud.hnjtbf.com/CustomerLogin/userlogin&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect");
+            String url=request.getRequestURL().toString()+ "?"+(request.getQueryString()).toString();
+            System.out.println(url);
+            response.sendRedirect("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxafe6999b4d77754a&redirect_uri="+url+"&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect");
         } else {
             String code = request.getParameter("code");
             System.out.println(code);
@@ -52,6 +54,7 @@ public class userlogin extends HttpServlet {
                 session.setAttribute("phone", phone);
                 session.setAttribute("openid", openid);
                 String go = request.getParameter("go");
+                System.out.println(go);
                 if (go != null) {
                     if (go.equals("buybaoxian")) {
                         response.sendRedirect("https://cloud.hnjtbf.com/CustomerLogin/cars.html");

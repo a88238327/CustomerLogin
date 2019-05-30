@@ -6,11 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30b8a523-55fc-4025-9240-4b362ac9803a" name="Default Changelist" comment="maven">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="30b8a523-55fc-4025-9240-4b362ac9803a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/userlogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/userlogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/shouye.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/shouye.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/servlet/userlogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/WEB-INF/classes/servlet/userlogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CustomerLogin/shouye.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CustomerLogin/shouye.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -68,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/buybaoxian.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
-              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#header#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#body#0;n#!!top" />
@@ -82,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlet/userlogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+            <state relative-caret-position="243">
+              <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -92,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/entity/selectdata.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="388">
-              <caret line="808" column="13" lean-forward="true" selection-start-line="808" selection-start-column="13" selection-end-line="808" selection-end-column="13" />
+              <caret line="808" column="13" selection-start-line="808" selection-start-column="13" selection-end-line="808" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -242,7 +243,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -287,6 +288,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CustomerLogin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CustomerLogin" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -463,7 +469,7 @@
       <workItem from="1558941099778" duration="71000" />
       <workItem from="1559092567492" duration="699000" />
       <workItem from="1559114635099" duration="9000" />
-      <workItem from="1559114700277" duration="4240000" />
+      <workItem from="1559114700277" duration="5642000" />
     </task>
     <task id="LOCAL-00001" summary="maven">
       <created>1556435680659</created>
@@ -745,11 +751,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558925582032</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="maven">
+      <created>1559122743661</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1559122743661</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234984000" />
+    <option name="totallyTimeSpent" value="236386000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -761,8 +774,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4941427" visible="true" weight="0.1401919" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -782,7 +794,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49887893" weight="0.32707182" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5011211" side_tool="true" weight="0.41656804" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32962137" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286334" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" show_stripe_button="false" weight="0.3289941" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" weight="0.3289941" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32781458" />
@@ -1218,7 +1230,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/entity/selectdata.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
-          <caret line="808" column="13" lean-forward="true" selection-start-line="808" selection-start-column="13" selection-end-line="808" selection-end-column="13" />
+          <caret line="808" column="13" selection-start-line="808" selection-start-column="13" selection-end-line="808" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1232,7 +1244,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/buybaoxian.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
-          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#header#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#body#0;n#!!top" />
@@ -1244,8 +1256,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlet/userlogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        <state relative-caret-position="243">
+          <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
         </state>
       </provider>
     </entry>
